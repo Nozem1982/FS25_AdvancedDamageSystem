@@ -1,0 +1,769 @@
+<l10n>
+    <translationContributors>Nozem_Oil_1982</translationContributors>
+    <texts>
+        <text name="ads_settings_title" text="ADS INSTELLINGEN"/>
+        <text name="ads_settings_admin_required" text="Voor ADS-instellingen zijn beheerdersrechten vereist in multiplayer."/>
+        <text name="ads_maintenancePrice_label" text="Onderhoudskosten Multiplier"/>
+        <text name="ads_maintenancePrice_tooltip" text="Past de kosten aan van alle werkplaatsdiensten, waaronder inspecties, reparaties en revisies. Een hogere waarde maakt alle onderhoudswerkzaamheden duurder."/>
+        <text name="ads_maintenanceDuration_label" text="Onderhoudsduur Multiplier"/>
+        <text name="ads_maintenanceDuration_tooltip" text="Past de duur aan van alle werkplaatsdiensten. Een hogere waarde verlengt de tijd dat uw voertuig in onderhoud of reparatie doorbrengt."/>
+        <text name="ads_workshopOpenHour_label" text="Openingstijd Werkplaats"/>
+        <text name="ads_workshopOpenHour_tooltip" text="Het uur van de dag waarop de werkplaats opengaat. Reparaties zijn alleen actief tijdens werktijden."/>
+        <text name="ads_workshopCloseHour_label" text="Sluitingstijd Werkplaats"/>
+        <text name="ads_workshopCloseHour_tooltip" text="Het uur van de dag waarop de werkplaats sluit. Reparaties worden na dit tijdstip gepauzeerd."/>
+        <text name="ads_engineMaxHeat_label" text="Max. Motorwarmte"/>
+        <text name="ads_engineMaxHeat_tooltip" text="De basissnelheid waarmee de motor warmte opbouwt bij maximale belasting. Hogere waarden zorgen dat de motor sneller opwarmt."/>
+        <text name="ads_cloggingSpeed_label" text="Verstoppingssnelheid"/>
+        <text name="ads_cloggingSpeed_tooltip" text="Past aan hoe snel de radiateur en luchtinlaat verstopt raken tijdens werk in stof, kaf en gewasresten. Hogere waarden laten verstopping sneller oplopen. Bij 100% is de verstoppingssnelheid ongeveer een derde van het onderhoudsinterval."/>
+        <text name="ads_fieldInspectionDuration_label" text="Duur Inspectie"/>
+        <text name="ads_fieldInspectionDuration_tooltip" text="Stelt in hoe lang een inspectie vóór de dienst duurt, in reële seconden."/>
+        <text name="ads_lubricationReducePerDay_label" text="Uitdrogingssnelheid Smering"/>
+        <text name="ads_lubricationReducePerDay_tooltip" text="Stelt in hoeveel smering per in-game dag uitdroogt. Bij 0% droogt smering niet uit over tijd."/>
+        <text name="ads_ws_header_title" text="Werkplaats"/>
+        <text name="ads_settings_section_service_wear" text="Onderhoud en Slijtage"/>
+        <text name="ads_settings_section_thermal_model" text="Thermisch Model"/>
+        <text name="ads_settings_section_battery_alternator" text="Batterij en Dynamo"/>
+        <text name="ads_settings_section_preshift_maintenance" text="Inspectie Vóór Dienst"/>
+        <text name="ads_settings_section_other" text="Overig"/>
+        <text name="ads_dealerWorkshopAvailable_label" text="Dealerwerkplaats 24/7"/>
+        <text name="ads_dealerWorkshopAvailable_tooltip" text="Houdt de dealerwerkplaats op elk moment van de dag beschikbaar."/>
+        <text name="ads_mobileWorkshopAvailable_label" text="Mobiele Werkplaats 24/7"/>
+        <text name="ads_mobileWorkshopAvailable_tooltip" text="Houdt de mobiele werkplaats op elk moment van de dag beschikbaar."/>
+        <text name="ads_ownWorkshopAvailable_label" text="Eigen Werkplaats 24/7"/>
+        <text name="ads_ownWorkshopAvailable_tooltip" text="Houdt uw eigen werkplaats op elk moment van de dag beschikbaar."/>
+        <text name="ads_instantInspection_label" text="Directe Inspectie"/>
+        <text name="ads_instantInspection_tooltip" text="Indien ingeschakeld, worden alle inspecties direct voltooid (er verstrijkt geen tijd). Let op: de optie 'Visueel' wordt dan niet meer beschikbaar."/>
+        <text name="ads_parkVehicle_label" text="Voertuig Parkeren Tijdens Onderhoud"/>
+        <text name="ads_parkVehicle_tooltip" text="Indien ingeschakeld, worden voertuigen die in onderhoud zijn overgeslagen bij het wisselen met TAB."/>
+        <text name="ads_warrantyEnabled_label" text="Garantie op Nieuwe Voertuigen"/>
+        <text name="ads_warrantyEnabled_tooltip" text="Past garantiedekking toe op reparaties aan nieuwe voertuigen (tot 20 bedrijfsuren of 12 maanden). Alleen originele (OEM) onderdelen worden kosteloos gedekt."/>
+        <text name="ads_aiOverloadAndOverheatControl_label" text="AI Overbelasting- &amp; Oververhittingscontrole"/>
+        <text name="ads_aiOverloadAndOverheatControl_tooltip" text="Indien ingeschakeld, vermindert de AI-arbeider de belasting om motoroverbelasting of oververhitting te voorkomen."/>
+        <text name="ads_aiWorkerTargetStress_label" text="AI Snelheidsrespons"/>
+        <text name="ads_aiWorkerTargetStress_tooltip" text="Bepaalt hoe vroeg de AI-arbeider reageert op overbelasting en oververhitting. Hogere waarden zijn minder gevoelig en reageren later; lagere waarden zijn gevoeliger en remmen eerder af."/>
+        <text name="ads_aiWorkerTargetStress_relaxed" text="Ontspannen"/>
+        <text name="ads_aiWorkerTargetStress_balanced" text="Gebalanceerd"/>
+        <text name="ads_aiWorkerTargetStress_sensitive" text="Gevoelig"/>
+        <text name="ads_aiWorkerTargetStress_verySensitive" text="Zeer Gevoelig"/>
+        <text name="ads_aiWorkerMinSpeed_label" text="Minimumsnelheid AI"/>
+        <text name="ads_aiWorkerMinSpeed_tooltip" text="Stelt de laagste cruisecontrolesnelheid van de AI-arbeider in die is toegestaan bij het verminderen van snelheid om overbelasting of oververhitting te vermijden."/>
+        <text name="ads_debugMode_label" text="Debugmodus"/>
+        <text name="ads_debugMode_tooltip" text="Schakelt het debugpaneel en uitgebreide debuglogging in de console in of uit."/>
+        <text name="ads_warningMessages_label" text="Waarschuwingsberichten"/>
+        <text name="ads_warningMessages_tooltip" text="Schakelt gameplay-waarschuwingsberichten in of uit, zoals meldingen over een koude motor of oververhitting."/>
+        <text name="ads_mobileWorkshopRestrictions_label" text="Beperkingen Mobiele Werkplaats"/>
+        <text name="ads_serviceInterval_label" text="Onderhoudsinterval"/>
+        <text name="ads_vehicleLifespan_label" text="Levensduur Voertuig"/>
+        <text name="ads_downtimeWear_label" text="Passieve Slijtage"/>
+        <text name="ads_generalWearEnabled_label" text="Leeftijdsgebonden Slijtage"/>
+        <text name="ads_systemStressRate_label" text="Systeemstress-snelheid"/>
+        <text name="ads_batteryCapacity_label" text="Batterijcapaciteit"/>
+        <text name="ads_thermalSensitivity_label" text="Thermische Gevoeligheid"/>
+        <text name="ads_option_off" text="Uit"/>
+        <text name="ads_option_none" text="Geen"/>
+        <text name="ads_serviceInterval_tooltip" text="Stelt het basisonderhoudsinterval in uren in waarna onderhoud vereist is. Het werkelijke interval varieert afhankelijk van het merk, de leeftijd en de kwaliteit van eerder onderhoud van het voertuig."/>
+        <text name="ads_vehicleLifespan_tooltip" text="Stelt de basislevensduur van het voertuig in uren in, waarna de conditie 0% zal bereiken. Hoe dichter de conditie bij nul komt, hoe onbetrouwbaarder het voertuig wordt."/>
+        <text name="ads_downtimeWear_tooltip" text="Stelt de passieve slijtagesnelheid in terwijl een voertuig stilstaat, als percentage van de basisslijtagesnelheid (Levensduur Voertuig). Bijvoorbeeld: 5% met de standaard levensduur van 100 uur betekent dat elk systeem ongeveer 1% conditie verliest na circa 20 uur stilstand. Let op: passieve slijtage is uitgeschakeld terwijl het voertuig overdekt gestald staat."/>
+        <text name="ads_generalWearEnabled_tooltip" text="Schakelt leeftijdsgebonden slijtage in. Naarmate het voertuig verslijt, krijgt elk systeem kleine verminderingen in kernkarakteristieken, zoals motorvermogen, hydraulische snelheid of remefficiëntie. Het effect wordt actief na het eerste derde deel van de levensduur van het voertuig, maar wordt pas merkbaar na het tweede derde deel en neemt sterker toe tegen het einde van de levensduur van de machine."/>
+        <text name="ads_mobileWorkshopRestrictions_tooltip" text="Indien ingeschakeld, hangt de beschikbaarheid van verschillende procedures in de mobiele werkplaats af van de onderhoudbaarheid van het voertuig."/>
+        <text name="ads_systemStressRate_tooltip" text="Bepaalt hoe snel stress opbouwt in systemen door overbelasting, oververhitting, wielslip en andere zware bedrijfsomstandigheden. Stress heeft direct invloed op de kans op een defect: hoe meer stress een systeem opbouwt, hoe groter de kans op falen."/>
+        <text name="ads_batteryCapacity_tooltip" text="Past de maximale bruikbare batterijcapaciteit aan. Waarden rond 150 Ah zijn realistischer, maar dan zult u nauwelijks nog batterijproblemen tegenkomen."/>
+        <text name="ads_alternatorMaxOutput_label" text="Max. Vermogen Dynamo"/>
+        <text name="ads_alternatorMaxOutput_tooltip" text="Stelt de maximale uitgangsstroom van de dynamo in. Hogere waarden laten de dynamo de batterij sneller opladen."/>
+        <text name="ads_idleCurrent_label" text="Sluimerstroom"/>
+        <text name="ads_idleCurrent_tooltip" text="Stelt de stroom in die de batterij leegtrekt terwijl de motor stilstaat. Bij bijvoorbeeld 0,5 A zou een batterij van 15 Ah ongeveer 30 reële uren nodig hebben om volledig leeg te lopen, nog voordat temperatuureffecten worden toegepast."/>
+        <text name="ads_thermalSensitivity_tooltip" text="Past het gedrag van het thermische model aan. Hogere instellingen maken de motor en transmissie gevoeliger voor belasting, omgevingstemperatuur en radiatorvervuiling — er wordt meer warmte gegenereerd onder dezelfde omstandigheden."/>
+        <text name="ads_temperatureChangeSpeed_label" text="Snelheid Thermisch Model"/>
+        <text name="ads_temperatureChangeSpeed_tooltip" text="Schaalt hoe snel de motor- en transmissietemperatuur veranderen. Lagere waarden vertragen zowel opwarmen als afkoelen; hogere waarden versnellen dit. De standaardwaarde is 1,4x."/>
+        <text name="ads_radiatorDirtInfluence_label" text="Invloed Radiatorvuil"/>
+        <text name="ads_radiatorDirtInfluence_tooltip" text="Vermindert de koelcapaciteit van de radiateur met dit percentage bij maximale vuilopbouw."/>
+        <text name="ads_warmingBoostPower_label" text="Versnelling Opwarmen"/>
+        <text name="ads_warmingBoostPower_tooltip" text="Versnelt kunstmatig het opwarmen van motor en transmissie. Gebruik Uit voor onaangepast thermisch gedrag."/>
+        <text name="ads_coolingSlowdownPower_label" text="Vertraging Afkoelen"/>
+        <text name="ads_coolingSlowdownPower_tooltip" text="Vertraagt kunstmatig het afkoelen van motor en transmissie nadat het voertuig is uitgeschakeld. Gebruik Uit voor onaangepast afkoelen."/>
+        <text name="ads_thermal_none" text="Passief"/>
+        <text name="ads_thermal_mild" text="Mild"/>
+        <text name="ads_thermal_default" text="Standaard"/>
+        <text name="ads_thermal_aggressive" text="Agressief"/>
+
+        <text name="ads_ws_label_value" text="Waarde"/>
+        <text name="ads_ws_label_age" text="Leeftijd"/>
+        <text name="ads_ws_label_operating_hours" text="Bedrijfsuren"/>
+        <text name="ads_ws_label_service" text="Onderhoud"/>
+        <text name="ads_ws_label_condition" text="Conditie"/>
+        <text name="ads_ws_label_maintainability" text="Onderhoudbaarheid"/>
+        <text name="ads_ws_label_maintenance_log" text="Onderhoudslogboek"/>
+        <text name="ads_ws_label_last_report" text="Laatste Rapport"/>
+        <text name="ads_ws_label_service_interval" text="Onderhoudsinterval"/>
+        <text name="ads_ws_label_last_maintenance" text="Laatste onderhoud"/>
+        <text name="ads_ws_label_last_inspection" text="Laatste inspectie"/>
+        <text name="ads_ws_table_header_part" text="Onderdeel"/>
+        <text name="ads_ws_table_header_description" text="Beschrijving"/>
+        <text name="ads_ws_table_header_stage" text="Fase"/>
+        <text name="ads_ws_table_header_price" text="Prijs"/>
+        <text name="ads_ws_table_header_repair_select" text="Repareren"/>
+        <text name="ads_ws_info_no_breakdowns" text="Er zijn geen storingen, of ze zijn nog niet ontdekt."/>
+        <text name="ads_ws_status_initial" text="Status wordt geladen..."/>
+        <text name="ads_ws_action_inspection" text="Inspectie"/>
+        <text name="ads_ws_action_maintenance" text="Onderhoud"/>
+        <text name="ads_ws_action_repair" text="Reparatie"/>
+        <text name="ads_ws_action_overhaul" text="Revisie"/>
+        <text name="ads_ws_action_cancel_service" text="Procedure Annuleren"/>
+        <text name="ads_ws_button_show" text="Tonen"/>
+        <text name="ads_ws_age_unit" text="maanden"/>
+        <text name="ads_ws_hours_unit" text="u"/>
+        <text name="ads_ws_option_yes" text="Ja"/>
+        <text name="ads_ws_option_no" text="Nee"/>
+        <text name="ads_ws_status_open" text="Werkplaats is open"/>
+        <text name="ads_ws_status_closed" text="Werkplaats is gesloten"/>
+        <text name="ads_ws_inspecting_status" text="Bezig met inspecteren..."/>
+        <text name="ads_ws_status_in_progress_format" text="%s bezig tot %s..."/>
+        <text name="ads_ws_task_inspection" text="Inspectie"/>
+        <text name="ads_ws_task_maintenance" text="Onderhoud"/>
+        <text name="ads_ws_task_overhaul" text="Revisie"/>
+        <text name="ads_ws_button_price_format" text="%s (%s)"/>
+        <text name="ads_ws_no_last_report_message" text="Er zijn nog geen rapporten"/>
+        <text name="ads_ws_no_report_message" text="Er is geen rapport"/>
+        <text name="ads_ws_no_log_empty_message" text="Logboek is nog leeg"/>
+        <text name="ads_ws_cancel_confirm_title" text="%s annuleren?"/>
+        <text name="ads_ws_cancel_confirm_text" text="De huidige voortgang wordt opgeslagen zoals deze is. Er wordt geen geld terugbetaald."/>
+
+        <text name="ads_log_header_title" text="Onderhoudslogboek"/>
+        <text name="ads_log_title" text="Technisch Onderhoudslogboek"/>
+        <text name="ads_log_total_cost_title" text="Totale Kosten"/>
+        <text name="ads_log_cost_per_month_title" text="Kosten per Maand"/>
+        <text name="ads_log_ownership_months_title" text="Eigendomsduur"/>
+        <text name="ads_log_total_breakdowns_count_title" text="Totaal Aantal Storingen"/>
+        <text name="ads_log_average_breakdowns_interval_title" text="Gem. Interval Storingen"/>
+        <text name="ads_log_average_maintenance_interval_title" text="Gem. Onderhoudsinterval"/>
+        <text name="ads_log_performed" text="%s uitgevoerd"/>
+        <text name="ads_log_inspection_desc_no_breakdowns" text="Geen storingen gedetecteerd"/>
+        <text name="ads_log_inspection_desc_with_breakdowns" text="Storingen gedetecteerd: %s"/>
+        <text name="ads_log_overhaul_desc_with_painting" text="Voertuig is opnieuw gespoten"/>
+        <text name="ads_log_repair_desc_generic" text="Reparatie"/>
+        <text name="ads_log_cancelled_desc" text="Procedure geannuleerd"/>
+        <text name="ads_log_date" text="Datum"/>
+        <text name="ads_log_hours" text="Bedrijfsuren"/>
+        <text name="ads_log_type" text="Type Werk"/>
+        <text name="ads_log_description" text="Beschrijving"/>
+        <text name="ads_log_price" text="Kosten"/>
+        <text name="ads_log_button_show_report" text="Rapport Tonen"/>
+        <text name="ads_log_empty" text="Logboek is leeg"/>
+
+        <text name="ads_breakdowns_severity_permanent" text="Permanent"/>
+        <text name="ads_breakdowns_severity_reduce_power" text="Vermogen Verminderd"/>
+        <text name="ads_breakdowns_severity_shutdown" text="Uitschakeling"/>
+        <text name="ads_breakdowns_severity_minor" text="Klein"/>
+        <text name="ads_breakdowns_severity_moderate" text="Matig"/>
+        <text name="ads_breakdowns_severity_major" text="Groot"/>
+        <text name="ads_breakdowns_severity_critical" text="Kritiek"/>
+        <text name="ads_breakdowns_general_wear_stage1_description" text="De opgebouwde belasting van jaren hard werken. Kleine, onomkeerbare slijtage aan kerncomponenten vermindert de algehele prestaties licht."/>
+        <text name="ads_breakdowns_part_vehicle" text="Voertuig"/>
+        <text name="ads_breakdowns_part_consumables" text="Verbruiksmaterialen"/>
+        <text name="ads_breakdowns_part_engine" text="Motor"/>
+        <text name="ads_breakdowns_part_battery" text="Batterij"/>
+        <text name="ads_breakdowns_part_ecu" text="ECU"/>
+        <text name="ads_breakdowns_part_wiring" text="Bedrading en connectoren"/>
+        <text name="ads_breakdowns_part_alternator_regulator" text="Dynamoregelaar"/>
+        <text name="ads_breakdowns_part_turbocharger" text="Turbo"/>
+        <text name="ads_breakdowns_part_oil_pump" text="Oliepomp"/>
+        <text name="ads_breakdowns_part_valve_train" text="Kleppenmechanisme"/>
+        <text name="ads_breakdowns_part_clutch" text="Koppeling"/>
+        <text name="ads_breakdowns_part_synchronizer" text="Synchronisatiering"/>
+        <text name="ads_breakdowns_part_powershift_hydraulic_pump" text="Powershift hydraulische pomp"/>
+        <text name="ads_breakdowns_part_cvt_chain" text="CVT-ketting"/>
+        <text name="ads_breakdowns_part_cvt_hydraulic_control_valve" text="CVT hydraulische regelklep"/>
+        <text name="ads_breakdowns_part_cvt" text="CVT"/>
+        <text name="ads_breakdowns_part_hydraulic_pump" text="Hydraulische pomp"/>
+        <text name="ads_breakdowns_part_hydraulic_cylinder" text="Hydraulische cilinder"/>
+        <text name="ads_breakdowns_part_pto_clutch" text="Aftakas-koppeling"/>
+        <text name="ads_breakdowns_part_brake_system" text="Remsysteem"/>
+        <text name="ads_breakdowns_part_wheel_bearing" text="Wiellager"/>
+        <text name="ads_breakdowns_part_steering_linkage" text="Stuurstangen"/>
+        <text name="ads_breakdowns_part_track_tensioner" text="Rupsbandspanner"/>
+        <text name="ads_breakdowns_part_thermostat" text="Thermostaat"/>
+        <text name="ads_breakdowns_part_cooling_system" text="Koelsysteem"/>
+        <text name="ads_breakdowns_part_fan_clutch" text="Ventilatorkoppeling"/>
+        <text name="ads_breakdowns_part_fuel_pump" text="Brandstofpomp"/>
+        <text name="ads_breakdowns_part_fuel_injectors" text="Brandstofinjectoren"/>
+        <text name="ads_breakdowns_part_fuel_filter" text="Brandstoffilter"/>
+        <text name="ads_breakdowns_part_fuel_line" text="Brandstofleiding"/>
+        <text name="ads_breakdowns_part_harvest_processing_system" text="Oogstverwerkingssysteem"/>
+        <text name="ads_breakdowns_part_unloading_auger" text="Losschroef"/>
+        <text name="ads_breakdowns_quick_fix_stage" text="Noodgerepareerd"/>
+        <text name="ads_breakdowns_defected_parts_stage" text="Defect"/>
+        <text name="ads_breakdowns_defected_parts_detected_description" text="De unit functioneert normaal, maar diagnose heeft een defect onderdeel aan het licht gebracht. Vanwege een kritiek lage veiligheidsmarge wordt preventieve vervanging aanbevolen om plotseling falen te voorkomen."/>
+        <text name="ads_breakdowns_temporarily_repaired_description" text="De unit functioneert normaal, maar leunt volledig op een noodreparatie van de versleten onderdelen. Om een onvermijdelijke storing onder belasting te voorkomen, wordt zo snel mogelijk volledige vervanging van de onderdelen aanbevolen."/>
+        <text name="ads_breakdowns_overheat_protection_stage1_description" text="Motorbeveiligingsmodus"/>
+        <text name="ads_breakdowns_overheat_protection_stage1_message" text="Motor-noodmodus actief! Vermogen verminderd!"/>
+        <text name="ads_breakdowns_overheat_protection_stage2_description" text="Motorbeveiligingsmodus"/>
+        <text name="ads_breakdowns_overheat_protection_stage2_message" text="Motor-noodmodus actief! Vermogen verminderd!"/>
+        <text name="ads_breakdowns_overheat_protection_stage3_description" text="Motorbeveiligingsmodus"/>
+        <text name="ads_breakdowns_overheat_protection_stage3_message" text="Motor-noodmodus actief! Vermogen verminderd!"/>
+        <text name="ads_breakdowns_overheat_protection_stage4_description" text="Motorbeveiligingsmodus"/>
+        <text name="ads_breakdowns_overheat_protection_stage4_message" text="Motor is uitgeschakeld ter bescherming tegen oververhitting"/>
+        <text name="ads_breakdowns_engine_jam_stage1_description" text="De motor is volledig vastgelopen"/>
+        <text name="ads_breakdowns_engine_jam_stage1_message" text="Motor vastgelopen"/>
+        <text name="ads_breakdowns_ecu_malfunction_stage1_description" text="ECU-fouten. Licht verminderd motorvermogen."/>
+        <text name="ads_breakdowns_ecu_malfunction_stage2_description" text="ECU-storing. Merkbaar vermogensverlies en verhoogd brandstofverbruik."/>
+        <text name="ads_breakdowns_ecu_malfunction_stage3_description" text="Kritieke ECU-storing. Aanzienlijk vermogensverlies, hoog brandstofverbruik en risico op afslaan van de motor."/>
+        <text name="ads_breakdowns_ecu_malfunction_stage4_description" text="Volledige ECU-storing. De motor kan niet worden aangestuurd en zal niet starten."/>
+        <text name="ads_breakdowns_ecu_malfunction_stage4_message" text="Motor is defect"/>
+        <text name="ads_breakdowns_corroded_wiring_stage1_description" text="Corrosie van bedrading en elektrische connectoren. Verhoogde contactweerstand veroorzaakt af en toe flikkerende verlichting, een instabiele spanningsvoorziening en moeilijk starten van de motor."/>
+        <text name="ads_breakdowns_corroded_wiring_stage2_description" text="Matige corrosie van bedrading en elektrische connectoren. Contactverliezen veroorzaken vaak flikkerende verlichting, een instabiele spanningsvoorziening, moeilijk starten en mogelijk afslaan van de motor."/>
+        <text name="ads_breakdowns_corroded_wiring_stage3_description" text="Ernstige corrosie van bedrading en elektrische connectoren. De stroomvoorziening naar kritieke circuits is instabiel, de verlichting kan volledig uitvallen, het motorkoppel is verminderd, de motor slaat waarschijnlijk af en starten is onbetrouwbaar."/>
+        <text name="ads_breakdowns_corroded_wiring_stage4_description" text="Storing in het startercircuit door ernstige corrosie van de bedrading. Verlichting werkt niet en de motor starten is onmogelijk."/>
+        <text name="ads_breakdowns_corroded_wiring_stage4_message" text="Storing in startercircuit"/>
+        <text name="ads_breakdowns_battery_sulfation_stage1_description" text="Sulfatatie van de batterij. De effectieve batterijcapaciteit is verminderd, wat resulteert in minder elektrische reserve onder belasting."/>
+        <text name="ads_breakdowns_battery_sulfation_stage2_description" text="Matige batterijsulfatatie. De effectieve batterijcapaciteit is aanzienlijk verminderd en de motor start moeilijk."/>
+        <text name="ads_breakdowns_battery_sulfation_stage3_description" text="Ernstige batterijsulfatatie. De bruikbare batterijcapaciteit is kritiek laag en het startvermogen is onstabiel."/>
+        <text name="ads_breakdowns_battery_sulfation_stage4_description" text="Kritieke batterijsulfatatie. De effectieve batterijcapaciteit is vrijwel afwezig en het startvermogen is onvoldoende voor een betrouwbare motorstart."/>
+        <text name="ads_breakdowns_battery_sulfation_stage4_message" text="Onvoldoende startvermogen batterij"/>
+        <text name="ads_breakdowns_alternator_regulator_failure_stage1_description" text="Storing in de dynamoregelaar. De laaduitvoer is verminderd, wat resulteert in minder efficiënt opladen van de batterij."/>
+        <text name="ads_breakdowns_alternator_regulator_failure_stage2_description" text="Matige storing in de dynamoregelaar. De laaduitvoer is onstabiel en verminderd, wat zorgt voor slecht opladen van de batterij en verhoogde spanningsverliezen in het elektrische systeem."/>
+        <text name="ads_breakdowns_alternator_regulator_failure_stage3_description" text="Ernstige storing in de dynamoregelaar. De laaduitvoer is kritiek verminderd, de spanningsvoorziening is onstabiel en het elektrische systeem functioneert met grote verliezen."/>
+        <text name="ads_breakdowns_alternator_regulator_failure_stage4_description" text="Volledige storing van de dynamoregelaar. Er is geen batterijoplading meer en het elektrische systeem draait alleen nog op de resterende batterijreserve."/>
+        <text name="ads_breakdowns_alternator_regulator_failure_stage4_message" text="Storing in laadsysteem"/>
+        <text name="ads_breakdowns_turbocharger_wear_stage1_description" text="Versleten turbolagers. Er is een licht fluitend geluid hoorbaar en er is een klein vermogensverlies bij hoge toeren."/>
+        <text name="ads_breakdowns_turbocharger_wear_stage2_description" text="Lekkende turboafdichtingen. Merkbaar vermogensverlies, verhoogd brandstofverbruik."/>
+        <text name="ads_breakdowns_turbocharger_wear_stage3_description" text="Beschadigde turbinebladen. Ernstig vermogensverlies en risico op afslaan van de motor bij zware belasting."/>
+        <text name="ads_breakdowns_turbocharger_wear_stage4_description" text="Catastrofale turbostoring. De motor heeft het meeste vermogen verloren en loopt risico op ernstige interne schade."/>
+        <text name="ads_breakdowns_oil_pump_malfunction_stage1_description" text="Storing in de oliepomp. De oliedruk is verminderd, het motorkoppel is licht verlaagd, de motortemperatuur is verhoogd en er kan mechanisch tikkend geluid aanwezig zijn."/>
+        <text name="ads_breakdowns_oil_pump_malfunction_stage2_description" text="Matige storing in de oliepomp. De oliedruk is onvoldoende, het motorkoppel is merkbaar verminderd, de motortemperatuur is verhoogd en mechanisch tikkend geluid is duidelijk hoorbaar."/>
+        <text name="ads_breakdowns_oil_pump_malfunction_stage3_description" text="Ernstige storing in de oliepomp. De oliedruk is kritiek laag, het motorkoppel is sterk verminderd, oververhitting van de motor is waarschijnlijk, tikkend geluid is ernstig en de motor kan afslaan."/>
+        <text name="ads_breakdowns_oil_pump_malfunction_stage4_description" text="Kritieke storing in de oliepomp. De oliecirculatie is onvoldoende voor veilig motorgebruik en starten of verder gebruik van de motor is niet mogelijk."/>
+        <text name="ads_breakdowns_oil_pump_malfunction_stage4_message" text="Storing in oliedruk"/>
+        <text name="ads_breakdowns_valve_train_malfunction_stage1_description" text="Storing in het kleppenmechanisme. Het motorkoppel is licht verminderd, het brandstofverbruik is verhoogd en er is abnormaal geluid van het kleppenmechanisme aanwezig."/>
+        <text name="ads_breakdowns_valve_train_malfunction_stage2_description" text="Matige storing in het kleppenmechanisme. Het motorkoppel is merkbaar verminderd, het brandstofverbruik is verhoogd, het geluid van het kleppenmechanisme is uitgesproken en de motor kan onder belasting haperen."/>
+        <text name="ads_breakdowns_valve_train_malfunction_stage3_description" text="Ernstige storing in het kleppenmechanisme. Het motorkoppel is sterk verminderd, het brandstofverbruik is aanzienlijk verhoogd, het geluid van het kleppenmechanisme is ernstig, de motor hapert vaak en kan afslaan."/>
+        <text name="ads_breakdowns_valve_train_malfunction_stage4_description" text="Kritieke storing in het kleppenmechanisme. Correcte klepwerking is niet langer gegarandeerd en starten of verder gebruik van de motor is niet mogelijk."/>
+        <text name="ads_breakdowns_valve_train_malfunction_stage4_message" text="Storing in kleppenmechanisme"/>
+        <text name="ads_breakdowns_fuel_pump_malfunction_stage1_description" text="Vroege slijtage van de brandstofpomp. Licht verminderd motorvermogen en verhoogd brandstofverbruik."/>
+        <text name="ads_breakdowns_fuel_pump_malfunction_stage2_description" text="Dalende brandstofdruk. Merkbaar vermogensverlies, hoger brandstofverbruik en af en toe afslaan van de motor."/>
+        <text name="ads_breakdowns_fuel_pump_malfunction_stage3_description" text="Kritieke brandstofdruk. Ernstig vermogensverlies, zeer hoog brandstofverbruik en frequent afslaan van de motor."/>
+        <text name="ads_breakdowns_fuel_pump_malfunction_stage4_description" text="Volledige storing van de brandstofpomp. Er wordt geen brandstof meer naar de motor gevoerd."/>
+        <text name="ads_breakdowns_fuel_pump_malfunction_stage4_message" text="Motor starten onmogelijk"/>
+        <text name="ads_breakdowns_fuel_injector_malfunction_stage1_description" text="Een of meer injectoren hebben licht verstopte sproeikoppen. De motor kan iets onregelmatig lopen, met een klein vermogensverlies."/>
+        <text name="ads_breakdowns_fuel_injector_malfunction_stage2_description" text="Slechte brandstofverneveling. De motor ontsteekt onregelmatig onder belasting, wat resulteert in merkbaar vermogensverlies en haperingen."/>
+        <text name="ads_breakdowns_fuel_injector_malfunction_stage3_description" text="Een brandstofinjector blijft hangen. De motor loopt zeer slecht, met aanzienlijk vermogensverlies en onbetrouwbaar starten."/>
+        <text name="ads_breakdowns_fuel_injector_malfunction_stage4_description" text="Een injector is volledig defect. De motor zal niet correct lopen en start mogelijk helemaal niet."/>
+        <text name="ads_breakdowns_fuel_injector_malfunction_stage4_message" text="Motor starten onmogelijk"/>
+        <text name="ads_breakdowns_brake_malfunction_stage1_description" text="Versleten remblokken. Een lichte afname van de remwerking."/>
+        <text name="ads_breakdowns_brake_malfunction_stage2_description" text="Lekkende remvloeistof of versleten schijven. De remweg is merkbaar toegenomen."/>
+        <text name="ads_breakdowns_brake_malfunction_stage3_description" text="Ernstig verlies van remdruk. De remmen zijn zeer zwak en onbetrouwbaar."/>
+        <text name="ads_breakdowns_brake_malfunction_stage4_description" text="Volledige storing van het remsysteem. Verder gebruik is uiterst gevaarlijk."/>
+        <text name="ads_breakdowns_brake_malfunction_stage4_message" text="Storing in remmen"/>
+        <text name="ads_breakdowns_transmission_slip_stage1_description" text="Versleten koppelingsplaten. Af en toe vermogensverlies door slippen van de transmissie onder belasting."/>
+        <text name="ads_breakdowns_transmission_slip_stage2_description" text="Aanzienlijke koppelingsslijtage. Merkbaar slippen van de transmissie, vooral tijdens optrekken."/>
+        <text name="ads_breakdowns_transmission_slip_stage3_description" text="Zwaar versleten koppeling. Ernstig slippen maakt het moeilijk om vermogen naar de wielen over te brengen."/>
+        <text name="ads_breakdowns_transmission_slip_stage4_description" text="Koppeling volledig doorgebrand. Het voertuig kan niet meer bewegen."/>
+        <text name="ads_breakdowns_transmission_slip_stage4_message" text="Storing in transmissie."/>
+        <text name="ads_breakdowns_transmission_synchronizer_malfunction_stage1_description" text="Versleten synchroniseerringen. Af en toe schuren of moeilijk schakelen."/>
+        <text name="ads_breakdowns_transmission_synchronizer_malfunction_stage2_description" text="Beschadigde synchroniseerringen. Schakelen is vaak moeilijk en kan mislukken."/>
+        <text name="ads_breakdowns_transmission_synchronizer_malfunction_stage3_description" text="Gebroken tanden op de synchroniseerring. Grote kans op mislukte schakelbewegingen of het weigeren van een versnelling onder belasting."/>
+        <text name="ads_breakdowns_transmission_synchronizer_malfunction_stage4_description" text="Synchroniseerringen volledig defect. Schakelen is onmogelijk."/>
+        <text name="ads_breakdowns_transmission_synchronizer_malfunction_stage4_message" text="Storing in transmissie"/>
+        <text name="ads_breakdowns_powershift_hydraulic_pump_malfunction_stage1_description" text="Lage hydraulische druk in de Powershift. Lichte vertraging en hardheid bij het inschakelen van versnellingen."/>
+        <text name="ads_breakdowns_powershift_hydraulic_pump_malfunction_stage2_description" text="Versleten afdichtingen van de hydraulische pomp. Merkbare vertraging en schokken bij het schakelen."/>
+        <text name="ads_breakdowns_powershift_hydraulic_pump_malfunction_stage3_description" text="Falende hydraulische pomp. Ernstige vertraging en heftige schokken bij het schakelen."/>
+        <text name="ads_breakdowns_powershift_hydraulic_pump_malfunction_stage4_description" text="Hydraulische Powershift-pomp defect. De transmissie zit vast in neutraal."/>
+        <text name="ads_breakdowns_cvt_chain_wear_stage1_description" text="Slijtage van de CVT-ketting. Er is kettingslip aanwezig en de warmteontwikkeling in de transmissie is verhoogd."/>
+        <text name="ads_breakdowns_cvt_chain_wear_stage2_description" text="Matige slijtage van de CVT-ketting. Kettingslip is merkbaar, het brandstofverbruik is verhoogd en de bedrijfstemperatuur van de transmissie is verhoogd."/>
+        <text name="ads_breakdowns_cvt_chain_wear_stage3_description" text="Ernstige slijtage van de CVT-ketting. Kettingslip is uitgesproken, het brandstofverbruik is aanzienlijk verhoogd en oververhitting van de transmissie is waarschijnlijk."/>
+        <text name="ads_breakdowns_cvt_chain_wear_stage4_description" text="Kritieke slijtage van de CVT-ketting. Koppeloverdracht via de variator is niet langer betrouwbaar en voortbeweging van het voertuig kan niet worden gegarandeerd."/>
+        <text name="ads_breakdowns_cvt_chain_wear_stage4_message" text="CVT-slip kritiek"/>
+        <text name="ads_breakdowns_hydraulic_control_valve_malfunction_stage1_description" text="Storing in de hydraulische CVT-regelklep. Er treden af en toe drukdalingen op, het motorkoppel is licht verminderd en het maximale overbrengingsbereik is beperkt."/>
+        <text name="ads_breakdowns_hydraulic_control_valve_malfunction_stage2_description" text="Matige storing in de hydraulische CVT-regelklep. Drukinstabiliteit komt vaak voor, het motorkoppel is verminderd, de transmissietemperatuur is verhoogd en het beschikbare overbrengingsbereik is verder beperkt."/>
+        <text name="ads_breakdowns_hydraulic_control_valve_malfunction_stage3_description" text="Ernstige storing in de hydraulische CVT-regelklep. Drukdalingen zijn uitgesproken, het motorkoppel is sterk verminderd, oververhitting van de transmissie is waarschijnlijk en de beperking van het overbrengingsbereik is aanzienlijk."/>
+        <text name="ads_breakdowns_hydraulic_control_valve_malfunction_stage4_description" text="Kritieke storing van de hydraulische CVT-regelklep. Drukregeling is niet langer stabiel, het overbrengingsbereik is sterk beperkt, de transmissie loopt overmatig warm en de aandrijflijn werkt in noodmodus."/>
+        <text name="ads_breakdowns_cvt_addon_malfunction_stage1_description" text="Vroege tekenen van een storing in de CVT-transmissie zijn gedetecteerd. Inspectie en reparatie zijn vereist."/>
+        <text name="ads_breakdowns_cvt_addon_malfunction_stage2_description" text="De storing in de CVT-transmissie verergert. Voortgezet gebruik kan leiden tot noodmodus."/>
+        <text name="ads_breakdowns_cvt_addon_malfunction_stage3_description" text="Kritieke schade aan de CVT-transmissie. De transmissie staat in noodmodus en de maximumsnelheid van het voertuig is verminderd."/>
+        <text name="ads_breakdowns_cvt_addon_malfunction_stage4_description" text="Volledige storing van de CVT-transmissie. Verder gebruik is onmogelijk totdat de transmissie is gerepareerd."/>
+        <text name="ads_breakdowns_cvt_addon_malfunction_stage4_message" text="Storing CVT-transmissie"/>
+        <text name="ads_breakdowns_hydraulic_control_valve_malfunction_stage4_message" text="Storing hydraulische CVT-regeling"/>
+        <text name="ads_breakdowns_thermostat_malfunction_stage1_description" text="De thermostaat van de motor begint te falen. De motor heeft langer nodig om de optimale temperatuur te bereiken of loopt iets te warm."/>
+        <text name="ads_breakdowns_thermostat_malfunction_stage2_description" text="Slechte reactie van de thermostaat. De temperatuurregeling van de motor is instabiel, wat de slijtage verhoogt."/>
+        <text name="ads_breakdowns_thermostat_malfunction_stage3_description" text="De thermostaat zit vast in gesloten stand. De motor zal constant oververhit raken onder belasting."/>
+        <text name="ads_breakdowns_thermostat_malfunction_stage4_description" text="Volledige storing van de thermostaat. De motorkoelvloeistof kan niet correct circuleren, wat leidt tot dreigende en ernstige oververhitting."/>
+        <text name="ads_breakdowns_hydraulic_pump_malfunction_stage1_description" text="Klein intern pomplek. Hydraulische werktuigen werken iets langzamer."/>
+        <text name="ads_breakdowns_hydraulic_pump_malfunction_stage2_description" text="Versleten pompafdichtingen. Merkbaar tragere hydraulische werking."/>
+        <text name="ads_breakdowns_hydraulic_pump_malfunction_stage3_description" text="Beschadigde hydraulische pomp. Werktuigen zijn extreem traag en zwak."/>
+        <text name="ads_breakdowns_hydraulic_pump_malfunction_stage4_description" text="Storing van de hydraulische pomp. Het hydraulische systeem werkt niet."/>
+        <text name="ads_breakdowns_hydraulic_pump_malfunction_stage4_message" text="Hydraulische storing"/>
+        <text name="ads_breakdowns_hydraulic_cylinder_internal_leak_stage1_description" text="Interne lekkage in een hydraulische cilinder. De hydraulische bedieningssnelheid is licht verminderd en aangekoppelde werktuigen kunnen langzaam wegzakken onder belasting."/>
+        <text name="ads_breakdowns_hydraulic_cylinder_internal_leak_stage2_description" text="Matige interne lekkage in een hydraulische cilinder. De hydraulische bedieningssnelheid is merkbaar verminderd en de stabiliteit bij het vasthouden van een last is aangetast."/>
+        <text name="ads_breakdowns_hydraulic_cylinder_internal_leak_stage3_description" text="Ernstige interne lekkage in een hydraulische cilinder. De hydraulische bediening is traag en zwak, en aangekoppelde werktuigen kunnen hun positie niet betrouwbaar vasthouden onder belasting."/>
+        <text name="ads_breakdowns_hydraulic_cylinder_internal_leak_stage4_description" text="Kritieke interne lekkage in een hydraulische cilinder. Hydraulische beweging is bijna verdwenen en het vasthouden van een last is niet meer mogelijk."/>
+        <text name="ads_breakdowns_hydraulic_cylinder_internal_leak_stage4_message" text="Lekkage hydraulische cilinder kritiek"/>
+        <text name="ads_breakdowns_pto_clutch_slip_stage1_description" text="Slip van de aftakas-koppeling. De koppeloverdracht via de aftakas is verminderd en de aftakas kan uitschakelen onder belasting."/>
+        <text name="ads_breakdowns_pto_clutch_slip_stage2_description" text="Matige slip van de aftakas-koppeling. De koppeloverdracht via de aftakas is aanzienlijk verminderd en automatische uitschakeling van de aftakas onder belasting komt vaak voor."/>
+        <text name="ads_breakdowns_pto_clutch_slip_stage3_description" text="Ernstige slip van de aftakas-koppeling. Het bruikbare koppel van de aftakas is sterk verminderd en stabiele werking van aftakas-aangedreven apparatuur kan niet worden gegarandeerd."/>
+        <text name="ads_breakdowns_pto_clutch_slip_stage4_description" text="Kritieke storing van de aftakas-koppeling. Koppeloverdracht via de aftakas is verdwenen en gebruik van de aftakas is niet mogelijk."/>
+        <text name="ads_breakdowns_pto_clutch_slip_stage4_message" text="Storing aftakas"/>
+        <text name="ads_breakdowns_bearing_wear_stage1_description" text="Slijtage van het wiellager. Er is lagergeluid en trilling aanwezig, de maximumsnelheid is licht beperkt en de rolweerstand is verhoogd."/>
+        <text name="ads_breakdowns_bearing_wear_stage2_description" text="Matige slijtage van het wiellager. Lagergeluid en trilling zijn uitgesproken, de maximumsnelheid is verminderd en de belasting van de aandrijflijn is verhoogd."/>
+        <text name="ads_breakdowns_bearing_wear_stage3_description" text="Ernstige slijtage van het wiellager. Trilling is sterk, de maximumsnelheid is aanzienlijk verminderd, de belasting van de aandrijflijn is verhoogd en er kan vastloopgeluid optreden."/>
+        <text name="ads_breakdowns_bearing_wear_stage4_description" text="Kritieke storing van het wiellager. Het lager is vastgelopen en de wielrotatie is geblokkeerd."/>
+        <text name="ads_breakdowns_bearing_wear_stage4_message" text="Wiellager vastgelopen"/>
+        <text name="ads_breakdowns_steering_linkage_wear_stage1_description" text="Slijtage van de stuurstangen. Er is een lichte stuurtrek aanwezig en de stuurrespons is verminderd."/>
+        <text name="ads_breakdowns_steering_linkage_wear_stage2_description" text="Matige slijtage van de stuurstangen. Stuurtrek is merkbaar en de stuurrespons is aanzienlijk verminderd."/>
+        <text name="ads_breakdowns_steering_linkage_wear_stage3_description" text="Ernstige slijtage van de stuurstangen. De rijstabiliteit is aangetast, stuurtrek is uitgesproken en de stuurrespons is sterk verminderd."/>
+        <text name="ads_breakdowns_steering_linkage_wear_stage4_description" text="Kritieke storing van de stuurstangen. De stuurrespons is bijna verdwenen en veilige richtingscontrole kan niet worden gegarandeerd."/>
+        <text name="ads_breakdowns_steering_linkage_wear_stage4_message" text="Storing stuurstangen"/>
+        <text name="ads_breakdowns_track_tensioner_malfunction_stage1_description" text="Storing van de rupsbandspanner. Richtingstrek, trilling, sleepgeluid en een lichte vermindering van de maximumsnelheid zijn aanwezig."/>
+        <text name="ads_breakdowns_track_tensioner_malfunction_stage2_description" text="Matige storing van de rupsbandspanner. Richtingsinstabiliteit en trilling zijn merkbaar, de tractieweerstand is verhoogd, de motor kan haperen en de maximumsnelheid is verminderd."/>
+        <text name="ads_breakdowns_track_tensioner_malfunction_stage3_description" text="Ernstige storing van de rupsbandspanner. Richtingsinstabiliteit is uitgesproken, trilling en sleepgeluid zijn ernstig, de belasting van de aandrijflijn is verhoogd en de maximumsnelheid is aanzienlijk verminderd."/>
+        <text name="ads_breakdowns_track_tensioner_malfunction_stage4_description" text="Kritieke storing van de rupsbandspanner. De rupsband loopt niet meer stabiel en het onderstel is vastgelopen."/>
+        <text name="ads_breakdowns_track_tensioner_malfunction_stage4_message" text="Storing rupsbandspanner"/>
+        <text name="ads_breakdowns_coolant_leak_stage1_description" text="Koelvloeistoflek. De efficiëntie van het koelsysteem is licht verminderd."/>
+        <text name="ads_breakdowns_coolant_leak_stage2_description" text="Matig koelvloeistoflek. De efficiëntie van het koelsysteem is verminderd en de bedrijfstemperatuur van de motor loopt sneller op onder belasting."/>
+        <text name="ads_breakdowns_coolant_leak_stage3_description" text="Ernstig koelvloeistoflek. De efficiëntie van het koelsysteem is aanzienlijk verminderd en oververhitting onder belasting is waarschijnlijk."/>
+        <text name="ads_breakdowns_coolant_leak_stage4_description" text="Kritiek koelvloeistoflek. De efficiëntie van het koelsysteem is kritiek verminderd en een veilige motortemperatuur kan niet worden gehandhaafd."/>
+        <text name="ads_breakdowns_coolant_leak_stage4_message" text="Koelvloeistoflek kritiek"/>
+        <text name="ads_breakdowns_fun_clutch_failure_stage1_description" text="Storing van de ventilatorkoppeling. De efficiëntie van de koelventilator is licht verminderd en er is abnormaal geluid van de ventilatorkoppeling aanwezig."/>
+        <text name="ads_breakdowns_fun_clutch_failure_stage2_description" text="Matige storing van de ventilatorkoppeling. De efficiëntie van de koelventilator is verminderd en het geluid van de ventilatorkoppeling is duidelijk hoorbaar."/>
+        <text name="ads_breakdowns_fun_clutch_failure_stage3_description" text="Ernstige storing van de ventilatorkoppeling. De efficiëntie van de koelventilator is aanzienlijk verminderd en het geluid van de ventilatorkoppeling is ernstig."/>
+        <text name="ads_breakdowns_fun_clutch_failure_stage4_description" text="Kritieke storing van de ventilatorkoppeling. De efficiëntie van de koelventilator is kritiek verminderd en voldoende luchtstroom door het koelsysteem kan niet worden gegarandeerd."/>
+        <text name="ads_breakdowns_fun_clutch_failure_stage4_message" text="Storing ventilatorkoppeling"/>
+        <text name="ads_breakdowns_fuel_filter_clogging_stage1_description" text="Verstopping van het brandstoffilter. De brandstofstroom is beperkt, wat lichte haperingen onder belasting en een kleine vermindering van het motorkoppel veroorzaakt."/>
+        <text name="ads_breakdowns_fuel_filter_clogging_stage2_description" text="Matige verstopping van het brandstoffilter. De beperking van de brandstofstroom is merkbaar, haperingen onder belasting komen vaak voor, het motorkoppel is verminderd en de motor kan afslaan."/>
+        <text name="ads_breakdowns_fuel_filter_clogging_stage3_description" text="Ernstige verstopping van het brandstoffilter. De brandstofstroom is kritiek beperkt, haperingen zijn uitgesproken, het motorkoppel is sterk verminderd en de motor slaat waarschijnlijk af."/>
+        <text name="ads_breakdowns_fuel_filter_clogging_stage4_description" text="Kritieke verstopping van het brandstoffilter. De brandstofstroom door het filter is onvoldoende voor motorgebruik en de motor starten is niet mogelijk."/>
+        <text name="ads_breakdowns_fuel_filter_clogging_stage4_message" text="Brandstoffilter verstopt"/>
+        <text name="ads_breakdowns_fuel_line_air_leak_stage1_description" text="Luchtlek in de brandstofleiding. De brandstoftoevoer verliest stabiliteit en de motor starten wordt moeilijker."/>
+        <text name="ads_breakdowns_fuel_line_air_leak_stage2_description" text="Matig luchtlek in de brandstofleiding. De brandstoftoevoer is instabiel, er is hapering aanwezig, starten van de motor is moeilijk en de motor kan afslaan."/>
+        <text name="ads_breakdowns_fuel_line_air_leak_stage3_description" text="Ernstig luchtlek in de brandstofleiding. De continuïteit van de brandstoftoevoer is verstoord, hapering is uitgesproken, starten is zeer onbetrouwbaar en de motor slaat waarschijnlijk af."/>
+        <text name="ads_breakdowns_fuel_line_air_leak_stage4_description" text="Kritiek luchtlek in de brandstofleiding. De brandstoftoevoer kan niet worden gehandhaafd en starten of verder gebruik van de motor is niet mogelijk."/>
+        <text name="ads_breakdowns_fuel_line_air_leak_stage4_message" text="Lucht in brandstofleiding"/>
+        <text name="ads_breakdowns_electrical_system_malfunction_stage1_description" text="Versleten isolatie, af en toe spanningsdalingen. Kleine elektrische storingen kunnen worden waargenomen."/>
+        <text name="ads_breakdowns_electrical_system_malfunction_stage2_description" text="Gecorrodeerde contacten en instabiele dynamo-uitvoer. Verlichting kan uitvallen, motor starten is onbetrouwbaar."/>
+        <text name="ads_breakdowns_electrical_system_malfunction_stage3_description" text="Risico op kortsluiting. Kritieke systemen zijn onbetrouwbaar en verlichting kan volledig uitvallen."/>
+        <text name="ads_breakdowns_electrical_system_malfunction_stage3_message" text="Storing verlichting"/>
+        <text name="ads_breakdowns_electrical_system_malfunction_stage4_description" text="Hoofdbedradingsboom defect. Het elektrische systeem van het voertuig is dood."/>
+        <text name="ads_breakdowns_electrical_system_malfunction_stage4_message" text="Starter reageert niet"/>
+        <text name="ads_breakdowns_carburetor_clogging_stage1_description" text="Lichte vervuiling van de carburateur. De motor hapert af en toe bij zware belasting."/>
+        <text name="ads_breakdowns_carburetor_clogging_stage2_description" text="Verstopte sproeiers. De motor hapert vaak en verliest vermogen, vooral bij snel gasgeven."/>
+        <text name="ads_breakdowns_carburetor_clogging_stage3_description" text="Ernstige verstopping van de carburateur. De motor loopt zeer onregelmatig, slaat vaak af en heeft moeite vermogen vast te houden."/>
+        <text name="ads_breakdowns_carburetor_clogging_stage4_description" text="Brandstofgebrek door een volledig verstopte carburateur. De motor zal niet lopen."/>
+        <text name="ads_breakdowns_carburetor_clogging_stage4_message" text="Carburateur is verstopt"/>
+        <text name="ads_breakdowns_harvest_processing_system_wear_stage1_description" text="Slijtage van het oogst- en verwerkingssysteem. De efficiëntie van gewasverwerking is licht verminderd, wat resulteert in een klein opbrengstverlies."/>
+        <text name="ads_breakdowns_harvest_processing_system_wear_stage2_description" text="Matige slijtage van het oogst- en verwerkingssysteem. De efficiëntie van gewasverwerking is merkbaar verminderd, wat resulteert in meetbaar opbrengstverlies."/>
+        <text name="ads_breakdowns_harvest_processing_system_wear_stage3_description" text="Ernstige slijtage van het oogst- en verwerkingssysteem. De efficiëntie van gewasverwerking is aanzienlijk verminderd, wat resulteert in hoog opbrengstverlies."/>
+        <text name="ads_breakdowns_harvest_processing_system_wear_stage4_description" text="Kritieke slijtage van het oogst- en verwerkingssysteem. De efficiëntie van gewasverwerking is kritiek verminderd, wat extreem opbrengstverlies veroorzaakt tijdens gebruik."/>
+        <text name="ads_breakdowns_harvest_processing_system_wear_stage4_message" text="Efficiëntie oogstverwerking kritiek verminderd"/>
+        <text name="ads_breakdowns_material_flow_system_wear_stage1_description" text="Lichte slijtage aan interne schroeven en elevatorkettingen. Een kleine hoeveelheid gewas gaat verloren tijdens intern transport."/>
+        <text name="ads_breakdowns_material_flow_system_wear_stage2_description" text="Versleten schroefbladen en slippende transportbanden veroorzaken meer morsen binnen de machine. Af en toe is er schurend geluid hoorbaar."/>
+        <text name="ads_breakdowns_material_flow_system_wear_stage3_description" text="Beschadigde elevatorschoepen en schroeven hebben moeite de gewasmassa te verplaatsen, wat leidt tot aanzienlijke verliezen en risico op een grote verstopping."/>
+        <text name="ads_breakdowns_material_flow_system_wear_stage4_description" text="Een belangrijk onderdeel van het materiaaltransportsysteem is defect geraakt, wat een ernstige verstopping veroorzaakt. De motor staat onder extreme belasting."/>
+        <text name="ads_breakdowns_material_flow_system_wear_stage4_message" text="Verstopping materiaalstroom"/>
+        <text name="ads_breakdowns_unloading_auger_malfunction_stage1_description" text="Uitgerekte aandrijfriem. Af en toe slippen zorgt voor een lichte afname van de lossnelheid."/>
+        <text name="ads_breakdowns_unloading_auger_malfunction_stage2_description" text="Versleten aandrijfriem en poelies. Aanzienlijk slippen onder belasting vermindert de lossnelheid merkbaar."/>
+        <text name="ads_breakdowns_unloading_auger_malfunction_stage3_description" text="Beschadigde tandwielkast of zwaar versleten riem. De schroef draait moeizaam, op een zeer lage snelheid."/>
+        <text name="ads_breakdowns_unloading_auger_malfunction_stage4_description" text="Aandrijfriem gebroken of tandwielkast vastgelopen. De losschroef zit volledig vast."/>
+        <text name="ads_breakdowns_unloading_auger_malfunction_stage4_message" text="Losschroef vastgelopen"/>
+        <text name="ads_breakdowns_dead_battery_message" text="Batterij leeg"/>
+        <text name="ads_breakdowns_voltage_sag_message" text="Onvoldoende systeemspanning"/>
+        <text name="ads_breakdowns_engine_stalled_message" text="Motor afgeslagen"/>
+        <text name="ads_breakdowns_pto_auto_disengage_message" text="Aftakas automatisch uitgeschakeld"/>
+        <text name="ads_breakdowns_gear_disengage_message" text="Versnelling uitgeschakeld"/>
+        <text name="ads_breakdown_at_progress_message" text="bezig"/>
+
+        <text name="ads_spec_cold_engine_message" text="Motor is koud! Hoge toeren veroorzaken slijtage!"/>
+        <text name="ads_spec_overheat_engine_message" text="Waarschuwing! Motor oververhit."/>
+        <text name="ads_spec_overheat_transmission_message" text="Waarschuwing! Transmissie oververhit."/>
+        <text name="ads_spec_this_month" text="Deze maand"/>
+        <text name="ads_spec_months_ago" text="maanden geleden"/>
+        <text name="ads_spec_never" text="Nooit"/>
+        <text name="ads_spec_op_hours_short" text="u"/>
+        <text name="ads_spec_tomorrow_at" text="morgen om "/>
+        <text name="ads_spec_day_after_tommorow_at" text="overmorgen om "/>
+        <text name="ads_spec_in_days_at" text="over {days} dagen om "/>
+        <text name="ads_spec_day_s" text="dag(en)"/>
+        <text name="ads_spec_hour_s" text="uur/uren"/>
+        <text name="ads_spec_minute_s" text="minu(u)t(en)"/>
+        <text name="ads_spec_duration_format_hours" text="%d %s"/>
+        <text name="ads_spec_duration_format_minutes" text="%d %s"/>
+        <text name="ads_spec_duration_format_combined" text="%s en %s"/>
+        <text name="ads_spec_months_ago_unit" text="maanden geleden"/>
+        <text name="ads_spec_months_ago_format" text="%s %s"/>
+        <text name="ads_spec_last_maintenance_until_format" text="%s tot %s"/>
+        <text name="ads_spec_service_interval_format" text="%s u"/>
+        <text name="ads_spec_maintenance_complete_notification" text="voltooid"/>
+        <text name="ads_spec_maintenance_cancelled_notification" text="geannuleerd"/>
+        <text name="ads_spec_inspection_issues_detected_notification" text="%s probleem/problemen gedetecteerd"/>
+        <text name="ads_spec_inspection_no_issues_detected_notification" text="Geen problemen gedetecteerd"/>
+        <text name="ads_spec_next_planned_service_notification" text="Geplande procedure gestart: %s"/>
+        <text name="ads_spec_next_planned_service_not_enouth_money_notification" text="Geplande %s geannuleerd wegens onvoldoende geld"/>
+        <text name="ads_spec_workshop_dealer" text="Dealer"/>
+        <text name="ads_spec_workshop_own" text="Eigen"/>
+        <text name="ads_spec_workshop_mobile" text="Mobiel"/>
+        <text name="ads_spec_system_engine" text="Motor"/>
+        <text name="ads_spec_system_transmission" text="Transmissie"/>
+        <text name="ads_spec_system_hydraulics" text="Hydrauliek / Aftakas"/>
+        <text name="ads_spec_system_cooling" text="Koelsysteem"/>
+        <text name="ads_spec_system_electrical" text="Elektrisch Systeem"/>
+        <text name="ads_spec_system_chassis" text="Chassis"/>
+        <text name="ads_spec_system_workprocess" text="Werksystemen"/>
+        <text name="ads_spec_system_fuel" text="Brandstofsysteem"/>
+        <text name="ads_spec_state_ready" text="Gereed"/>
+        <text name="ads_spec_state_inspection" text="Inspectie"/>
+        <text name="ads_spec_state_maintenance" text="Onderhoud"/>
+        <text name="ads_spec_state_repair" text="Reparatie"/>
+        <text name="ads_spec_state_overhaul" text="Revisie"/>
+        <text name="ads_spec_state_broken" text="Defect"/>
+        <text name="ads_spec_state_excellent" text="Uitstekend"/>
+        <text name="ads_spec_state_good" text="Goed"/>
+        <text name="ads_spec_state_normal" text="Normaal"/>
+        <text name="ads_spec_state_bad" text="Slecht"/>
+        <text name="ads_spec_state_terrible" text="Erbarmelijk"/>
+        <text name="ads_spec_state_unknown" text="Onbekend"/>
+        <text name="ads_spec_state_optimal" text="Optimaal"/>
+        <text name="ads_spec_state_recommended" text="Aanbevolen"/>
+        <text name="ads_spec_state_required" text="Vereist"/>
+        <text name="ads_spec_state_overdue" text="Achterstallig"/>
+        <text name="ads_spec_state_legendary" text="Legendarisch"/>
+        <text name="ads_spec_state_premium" text="Premium"/>
+        <text name="ads_spec_state_standart" text="Standaard"/>
+        <text name="ads_spec_state_budget" text="Budget"/>
+        <text name="ads_spec_state_low" text="Laag"/>
+        <text name="ads_spec_state_average" text="Gemiddeld"/>
+        <text name="ads_spec_state_high" text="Hoog"/>
+        <text name="ads_spec_state_workhorse" text="Werkpaard"/>
+        <text name="ads_spec_part_types_used" text="Gebruikt"/>
+        <text name="ads_spec_part_types_aftermarket" text="Namaak"/>
+        <text name="ads_spec_part_types_oem" text="OEM"/>
+        <text name="ads_spec_part_types_premium" text="Premium"/>
+        <text name="ads_spec_inspection_visual" text="Visueel"/>
+        <text name="ads_spec_inspection_standard" text="Standaard"/>
+        <text name="ads_spec_inspection_complete" text="Volledige Defectoscopie"/>
+        <text name="ads_spec_maintenance_minimal" text="Minimaal"/>
+        <text name="ads_spec_maintenance_standard" text="Standaard"/>
+        <text name="ads_spec_maintenance_extended" text="Uitgebreid"/>
+        <text name="ads_spec_maintenance_preventive" text="Preventief"/>
+        <text name="ads_spec_overhaul_partial" text="Gedeeltelijk"/>
+        <text name="ads_spec_overhaul_standard" text="Standaard"/>
+        <text name="ads_spec_overhaul_full" text="Volledig"/>
+        <text name="ads_spec_repair_type_fix" text="Noodreparatie"/>
+        <text name="ads_spec_repair_type_replacement" text="Standaard"/>
+        <text name="ads_spec_repair_type_advanced" text="Uitgebreid"/>
+
+        <text name="ads_option_menu_option_one_title_inspection" text="Selecteer inspectietype"/>
+        <text name="ads_option_menu_option_two_title_inspection" text="Repareer gevonden storingen"/>
+        <text name="ads_option_menu_option_one_title_maintenance" text="Selecteer onderhoudsniveau"/>
+        <text name="ads_option_menu_option_two_title_maintenance" text="Selecteer kwaliteit verbruiksmaterialen"/>
+        <text name="ads_option_menu_option_one_title_repair" text="Selecteer reparatietype"/>
+        <text name="ads_option_menu_option_two_title_repair" text="Selecteer kwaliteit onderdelen"/>
+        <text name="ads_option_menu_option_one_title_overhaul" text="Selecteer omvang werkzaamheden"/>
+        <text name="ads_option_menu_option_two_title_overhaul" text="Selecteer systeem"/>
+        <text name="ads_option_menu_price_text" text="Prijs: "/>
+        <text name="ads_option_menu_warranty_repair_text" text="Garantiereparatie"/>
+        <text name="ads_option_menu_duration_text" text="Duur: "/>
+        <text name="ads_option_menu_finish_time_text" text="Eindtijd: "/>
+        <text name="ads_option_menu_start_text" text="Starten"/>
+        <text name="ads_option_menu_duration_instant" text="Direct"/>
+        <text name="ads_option_menu_inspection_visual_description" text="* Snelle visuele inspectie. Lage kosten en direct resultaat. Detecteert zichtbare storingen, met slechts een kleine kans dat gebreken worden gemist. Levert geen technische conditiegegevens."/>
+        <text name="ads_option_menu_inspection_standard_description" text="* Routinematige diagnostische procedure. Identificeert alle actieve storingen en genereert een algemeen rapport over de conditie van het voertuig."/>
+        <text name="ads_option_menu_inspection_complete_description" text="* Diepgaande diagnose. Garandeert detectie van alle storingen, inclusief potentiële, en levert een uitgebreid rapport met exacte gezondheidspercentages voor alle componenten."/>
+        <text name="ads_option_menu_maintenance_minimal_description" text="* Basisonderhoud. Aanzienlijk goedkoper en sneller, maar herstelt het Onderhoudsniveau niet volledig en levert een korter interval tot het volgende onderhoud."/>
+        <text name="ads_option_menu_maintenance_standard_description" text="* Routineonderhoud volgens fabrieksspecificaties. Herstelt het Onderhoudsniveau naar normaal en levert het standaardinterval tot het volgende onderhoud."/>
+        <text name="ads_option_menu_maintenance_extended_description" text="* Uitgebreid onderhoud. Duurt langer en kost meer, maar herstelt het Onderhoudsniveau tot boven het standaardniveau en levert een langer interval tot het volgende onderhoud."/>
+        <text name="ads_option_menu_maintenance_preventive_description" text="* Preventief onderhoud, verder dan standaard fabrieksonderhoud. Herstelt het Onderhoudsniveau naar normaal en pakt de meest problematische systemen aan om storingsrisico te verminderen."/>
+        <text name="ads_option_menu_repair_type_fix_description" text="* Tijdelijke reparatie bedoeld om de machine inzetbaar te houden voor dringend werk. Herstelt snel en goedkoop de basisfunctionaliteit, maar de storing blijft onopgelost en zal na verloop van tijd terugkeren."/>
+        <text name="ads_option_menu_repair_type_replacement_description" text="* Standaardvervanging van het defecte onderdeel. Verhelpt de huidige storing volledig en herstelt de betreffende unit naar normale bedrijfsconditie."/>
+        <text name="ads_option_menu_repair_type_advanced_description" text="* Grondige reparatie inclusief vervanging van het defecte onderdeel en onderhoud van gerelateerde onderdelen binnen het systeem. Vermindert de kans op herhaalde storingen in het betreffende systeem aanzienlijk."/>
+        <text name="ads_option_menu_overhaul_partial_description" text="* Herstelt het geselecteerde systeem naar een goede bedrijfsconditie. Sneller en goedkoper dan een volledige voertuigrevisie."/>
+        <text name="ads_option_menu_overhaul_standard_description" text="* Uitgebreide werkzaamheden aan alle belangrijke componenten. Herstelt de Conditie naar een goed niveau."/>
+        <text name="ads_option_menu_overhaul_full_description" text="* Volledige herbouw. Hoge kosten en duur, maar herstelt de Conditie naar een uitstekend niveau."/>
+        <text name="ads_option_menu_part_used_description" text="* Gebruikte onderdelen. Zeer goedkoop, maar zeer risicovol (~50% kans op gebreken)"/>
+        <text name="ads_option_menu_part_aftermarket_description" text="* Budget namaakonderdelen. Lagere kosten, maar een matig risico op gebreken (33%)."/>
+        <text name="ads_option_menu_part_oem_description" text="* Originele fabrieksonderdelen (OEM). Standaard betrouwbaarheid (10% risico op gebreken) tegen volle prijs."/>
+        <text name="ads_option_menu_part_premium_description" text="* Versterkte prestatie-onderdelen. Duur, maar strikt kwaliteitsgecontroleerd (0% risico op gebreken)."/>
+        <text name="ads_option_menu_perform_repair" text="Repareer alle gevonden storingen"/>
+        <text name="ads_option_menu_perform_maintenance" text="Voer onderhoud uit na reparatie"/>
+        <text name="ads_option_menu_perform_renew_paint" text="Lak vernieuwen"/>
+        <text name="ads_option_menu_option_three_disclaimer_repair_after_detection" text="* Start automatisch een standaardreparatie met OEM-onderdelen als er storingen worden gedetecteerd."/>
+        <text name="ads_option_menu_option_three_disclaimer_maintenance_after_repair" text="* Start automatisch standaardonderhoud met OEM-verbruiksmaterialen na reparatie."/>
+        <text name="ads_option_menu_option_three_disclaimer_overhaul_repaint" text="* Voertuig opnieuw spuiten tijdens revisie."/>
+        <text name="ads_option_menu_choosen_parts_text" text="* Gekozen voor reparatie:"/>
+
+        <text name="ads_report_header_title" text="Inspectierapport"/>
+        <text name="ads_report_vehicle_name_title" text="Voertuignaam"/>
+        <text name="ads_report_date_title" text="Datum"/>
+        <text name="ads_report_vehicle_age_title" text="Leeftijd"/>
+        <text name="ads_report_vehicle_operating_hours_title" text="Bedrijfsuren"/>
+        <text name="ads_report_inspection_type_title" text="Inspectietype"/>
+        <text name="ads_report_inspection_location_title" text="Locatie"/>
+        <text name="ads_report_overall_assessment_title" text="Algemene Conditiebeoordeling"/>
+        <text name="ads_report_vehicle_specs_title" text="Voertuigspecificaties"/>
+        <text name="ads_report_detected_breakdowns_title" text="Gedetecteerde Storingen"/>
+        <text name="ads_report_recommendations_title" text="Conclusie en Aanbevelingen"/>
+        <text name="ads_report_state_optimal" text="Optimaal"/>
+        <text name="ads_report_state_normal" text="Normaal"/>
+        <text name="ads_report_state_degraded" text="Verminderd"/>
+        <text name="ads_report_state_impaired" text="Aangetast"/>
+        <text name="ads_report_state_critical" text="Kritiek"/>
+        <text name="ads_report_state_not_available" text="N.v.t."/>
+        <text name="ads_report_overall_assessment_condition" text="Conditieniveau"/>
+        <text name="ads_report_overall_assessment_service" text="Onderhoudsniveau"/>
+        <text name="ads_report_overall_assessment_mtbf" text="MTBF (uur)"/>
+        <text name="ads_report_overall_assessment_crit_fail_risk" text="Risico Kritieke Storing"/>
+        <text name="ads_report_overall_assessment_rul" text="Resterende Levensduur (uur)"/>
+        <text name="ads_report_overall_assessment_wear_rate" text="Slijtagesnelheid (%/u)"/>
+        <text name="ads_report_overall_assessment_nominal_wear_rate" text="Nominale Slijtagesnelheid (%/u)"/>
+        <text name="ads_report_system_condition_title" text="Systeemconditie | Storingsrisico"/>
+        <text name="ads_report_system_condition_power" text="Huidig Vermogen"/>
+        <text name="ads_report_system_condition_brakes" text="Remefficiëntie"/>
+        <text name="ads_report_system_condition_transmission" text="Transmissie"/>
+        <text name="ads_report_system_condition_harvest" text="Oogstefficiëntie"/>
+        <text name="ads_report_system_condition_cooling" text="Koelefficiëntie"/>
+        <text name="ads_report_system_condition_consumption" text="Brandstofverbruik"/>
+        <text name="ads_report_system_condition_hydraulic" text="Hydraulische Efficiëntie"/>
+        <text name="ads_report_transmission_slipping" text="Slippend"/>
+        <text name="ads_report_transmission_shifting_impaired" text="Schakelen Aangetast"/>
+        <text name="ads_report_transmission_gear_rejection" text="Versnelling Geweigerd"/>
+        <text name="ads_report_transmission_shift_delay" text="Schakelvertraging"/>
+        <text name="ads_report_transmission_cvt_slipping" text="Riem-/Kettingslip"/>
+        <text name="ads_report_transmission_cvt_ratio_limited" text="Overbrenging Beperkt"/>
+        <text name="ads_report_transmission_cvt_pressure_instability" text="Drukinstabiliteit"/>
+        <text name="ads_report_transmission_failed" text="Defect"/>
+        <text name="ads_report_vehicle_spec_max_alternator_current" text="Max. Dynamostroom"/>
+        <text name="ads_report_vehicle_spec_battery_charge" text="Batterijlading"/>
+        <text name="ads_report_vehicle_spec_battery_capacity" text="Batterijcapaciteit"/>
+        <text name="ads_report_stress_absent" text="Afwezig"/>
+        <text name="ads_report_stress_low" text="Laag"/>
+        <text name="ads_report_stress_moderate" text="Matig"/>
+        <text name="ads_report_stress_elevated" text="Verhoogd"/>
+        <text name="ads_report_stress_high" text="Hoog"/>
+        <text name="ads_report_recommendation_repair_active_breakdowns" text="Actieve storingen gedetecteerd. Standaardreparatie van alle actieve storingen wordt aanbevolen."/>
+        <text name="ads_report_recommendation_defective_parts" text="Defecte vervangingsonderdelen gedetecteerd: %s. Preventieve vervanging wordt aanbevolen om plotseling falen te voorkomen."/>
+        <text name="ads_report_recommendation_quick_fix" text="Noodreparatie gedetecteerd: %s. Standaardvervanging wordt bij de eerstvolgende gelegenheid aanbevolen."/>
+        <text name="ads_report_recommendation_service_due" text="Onderhoudsinterval bereikt. Voer onderhoud uit."/>
+        <text name="ads_report_recommendation_service_urgent" text="Het onderhoudsinterval is overschreden. Voer dringend onderhoud uit!"/>
+        <text name="ads_report_recommendation_overhaul" text="Slijtage van kerncomponenten gedetecteerd. Voer een revisie uit."/>
+        <text name="ads_report_recommendation_system_overhaul" text="Kritieke slijtage gedetecteerd in %s. Voer een gedeeltelijke revisie van dit systeem uit."/>
+        <text name="ads_report_recommendation_system_preventive_maintenance" text="Verhoogd storingsrisico gedetecteerd in %s. Voer preventief onderhoud uit om het risico op falen te verminderen."/>
+        <text name="ads_report_recommendation_operating_conditions" text="Tekenen van intensief overmatig gebruik gedetecteerd. Verbeter de bedrijfsomstandigheden."/>
+        <text name="ads_report_recommendation_repeat_maintenance" text="Defecte verbruiksmaterialen gedetecteerd. Herhaal het onderhoud om defecte onderdelen te vervangen."/>
+        <text name="ads_report_recommendation_all_ok" text="Geen kritieke aanbevelingen. Voertuig verkeert in bruikbare conditie."/>
+
+        <text name="ads_grease_gun_name" text="Vetspuit"/>
+        <text name="ads_grease_gun_function" text="Gebruikt voor smeerbeurten"/>
+        <text name="ads_grease_gun_action" text="Vet aanbrengen"/>
+        <text name="ads_grease_gun_no_vehicle" text="Geen voertuig binnen smeerbereik"/>
+        <text name="ads_grease_gun_lubrication_not_require" text="%s heeft geen smering nodig"/>
+        <text name="ads_grease_gun_already_lubricated" text="%s is al gesmeerd"/>
+        <text name="ads_air_blower_name" text="Luchtblazer"/>
+        <text name="ads_air_blower_function" text="Gebruikt om radiateurs en luchtinlaten te reinigen"/>
+        <text name="ads_air_blower_action" text="Radiateur en luchtinlaat reinigen"/>
+        <text name="ads_air_blower_no_vehicle" text="Geen voertuig binnen reinigingsbereik"/>
+        <text name="ads_air_blower_cleaning_not_require" text="%s heeft geen reiniging nodig"/>
+        <text name="ads_air_blower_already_clean" text="%s: radiateur en luchtinlaat zijn al schoon"/>
+        <text name="ads_jumper_cables_name" text="Startkabels"/>
+        <text name="ads_jumper_cables_function" text="Gebruikt om voertuigbatterijen te verbinden en dode motoren te starten"/>
+        <text name="ads_jumper_cables_action" text="Startkabels aan-/afkoppelen"/>
+        <text name="ads_jumper_cables_connected" text="Startkabels aangesloten op %s"/>
+        <text name="ads_jumper_cables_already_connected" text="Startkabels al aangesloten op %s"/>
+        <text name="ads_jumper_cables_impossible_to_connect" text="Voertuig is niet geschikt om startkabels op aan te sluiten"/>
+        <text name="ads_jumper_cables_both_already_connected" text="Startkabels al aangesloten op %s en %s"/>
+        <text name="ads_jumper_cables_disconnected" text="Startkabels losgekoppeld van %s"/>
+        <text name="ads_jumper_cables_auto_disconnected" text="Startkabels losgekoppeld omdat een van de voertuigen begon te rijden"/>
+        <text name="ads_jumper_cables_is_too_far" text="%s is te ver van %s"/>
+        <text name="input_ADS_FIELD_INSPECTION" text="Voertuiginspectie"/>
+        <text name="input_ADS_CLOSE_NOTIFICATION" text="OK"/>
+        <text name="input_ADS_FULL_THROTTLE" text="Vol gas overschrijven"/>
+        <text name="input_ADS_ADJUST_THROTTLE" text="Gaslimiet aanpassen"/>
+        <text name="ads_field_inspection_action" text="Voertuig inspecteren"/>
+        <text name="ads_field_inspection_hold_to_start" text="Ingedrukt houden om inspectie te starten"/>
+        <text name="ads_field_inspection_starting" text="Inspectie wordt gestart..."/>
+        <text name="ads_field_inspection_progress" text="Visuele inspectie wordt uitgevoerd... %d%%"/>
+        <text name="ads_field_inspection_cancelled" text="Inspectie geannuleerd"/>
+        <text name="ads_field_inspection_engine_must_be_stopped" text="Zet de motor uit voordat u inspecteert"/>
+        <text name="ads_inspection_dialog_title" text="Visuele Inspectie Vóór Dienst"/>
+        <text name="ads_inspection_section_fluids" text="1. Technische Vloeistoffen"/>
+        <text name="ads_inspection_section_cooling_air" text="2. Koel- en Luchtinlaatsysteem"/>
+        <text name="ads_inspection_section_lubrication" text="3. Smeerpunten"/>
+        <text name="ads_inspection_section_additional" text="4. Aanvullende Opmerkingen"/>
+        <text name="ads_inspection_engine_oil" text="Motorolie"/>
+        <text name="ads_inspection_coolant" text="Koelvloeistof"/>
+        <text name="ads_inspection_hydraulic_fluid" text="Hydraulische Olie"/>
+        <text name="ads_inspection_transmission_oil" text="Transmissieolie"/>
+        <text name="ads_inspection_radiator" text="Radiateur"/>
+        <text name="ads_inspection_air_duct" text="Luchtinlaatkanaal"/>
+        <text name="ads_inspection_air_filter" text="Luchtfilter"/>
+        <text name="ads_inspection_lubrication_level" text="Smeringsniveau"/>
+        <text name="ads_inspection_no_suspicious_symptoms" text="Geen verdachte symptomen gedetecteerd"/>
+        <text name="ads_inspection_ok" text="OK"/>
+        <text name="ads_inspection_status_slightly_low" text="Licht Laag"/>
+        <text name="ads_inspection_status_low" text="Laag"/>
+        <text name="ads_inspection_status_very_low" text="Zeer Laag"/>
+        <text name="ads_inspection_status_critically_low" text="Kritiek Laag"/>
+        <text name="ads_inspection_status_slightly_darkened" text="Licht Verkleurd"/>
+        <text name="ads_inspection_status_darkened" text="Verkleurd"/>
+        <text name="ads_inspection_status_contaminated" text="Verontreinigd"/>
+        <text name="ads_inspection_status_critical_condition" text="Kritiek"/>
+        <text name="ads_inspection_status_slight_moisture" text="Licht Vochtig"/>
+        <text name="ads_inspection_status_seepage" text="Doorsijpeling"/>
+        <text name="ads_inspection_status_active_leak" text="Actief Lek"/>
+        <text name="ads_inspection_status_severe_leak" text="Ernstig Lek"/>
+        <text name="ads_inspection_status_slightly_dirty" text="Licht Vuil"/>
+        <text name="ads_inspection_status_dirty" text="Vuil"/>
+        <text name="ads_inspection_status_heavily_clogged" text="Zwaar Verstopt"/>
+        <text name="ads_inspection_status_critically_clogged" text="Kritiek Verstopt"/>
+        <text name="ads_inspection_status_slightly_dry" text="Licht Droog"/>
+        <text name="ads_inspection_status_dry" text="Droog"/>
+        <text name="ads_inspection_status_very_dry" text="Zeer Droog"/>
+        <text name="ads_inspection_status_critically_dry" text="Kritiek Droog"/>
+        <text name="ads_inspection_status_not_required" text="Niet Vereist"/>
+        <text name="ads_inspection_hint_coolant_leak_stage1" text="Lichte sporen van koelvloeistof zijn zichtbaar bij de aansluitingen van het koelsysteem."/>
+        <text name="ads_inspection_hint_coolant_leak_stage2" text="Koelvloeistofresten zijn zichtbaar en het koelvloeistofniveau ligt onder normaal."/>
+        <text name="ads_inspection_hint_coolant_leak_stage3" text="Merkbaar koelvloeistofverlies is zichtbaar rond het koelsysteem."/>
+        <text name="ads_inspection_hint_coolant_leak_stage4" text="Het koelvloeistofniveau is kritiek laag, met zware sporen van koelvloeistof zichtbaar."/>
+        <text name="ads_inspection_hint_oil_pump_malfunction_stage1" text="De motorolie ziet er licht verkleurd uit."/>
+        <text name="ads_inspection_hint_oil_pump_malfunction_stage2" text="De motorolie is donkerder dan normaal."/>
+        <text name="ads_inspection_hint_oil_pump_malfunction_stage3" text="De motorolie ziet er verontreinigd uit."/>
+        <text name="ads_inspection_hint_oil_pump_malfunction_stage4" text="De conditie van de olie lijkt kritiek."/>
+        <text name="ads_inspection_hint_hydraulic_cylinder_internal_leak_stage1" text="Een lichte olieachtige film is zichtbaar rond de hydraulische cilinder."/>
+        <text name="ads_inspection_hint_hydraulic_cylinder_internal_leak_stage2" text="Hydraulische doorsijpeling is zichtbaar rond de cilinder."/>
+        <text name="ads_inspection_hint_hydraulic_cylinder_internal_leak_stage3" text="Duidelijke sporen van hydraulische olie zijn zichtbaar bij de cilinder."/>
+        <text name="ads_inspection_hint_hydraulic_cylinder_internal_leak_stage4" text="Zware sporen van hydraulische olie zijn zichtbaar. Het gebied rond de cilinder is sterk vervuild met olie."/>
+        <text name="ads_inspection_hint_radiator_clogging_stage1" text="Het radiateuroppervlak is licht vervuild."/>
+        <text name="ads_inspection_hint_radiator_clogging_stage2" text="De radiateur is merkbaar vervuild."/>
+        <text name="ads_inspection_hint_radiator_clogging_stage3" text="De radiateur is zwaar verstopt met vuil en afval."/>
+        <text name="ads_inspection_hint_radiator_clogging_stage4" text="De radiateur is kritiek verstopt met vuil en afval."/>
+        <text name="ads_inspection_hint_air_intake_clogging_stage1" text="Het luchtinlaatkanaal vertoont lichte vervuiling."/>
+        <text name="ads_inspection_hint_air_intake_clogging_stage2" text="Het luchtinlaatkanaal is merkbaar vuil."/>
+        <text name="ads_inspection_hint_air_intake_clogging_stage3" text="Het luchtinlaatkanaal is zwaar verstopt met stof en afval."/>
+        <text name="ads_inspection_hint_air_intake_clogging_stage4" text="Het luchtinlaatkanaal is kritiek verstopt met stof en afval."/>
+        <text name="ads_inspection_hint_lubrication_stage1" text="Smeerpunten zien er licht droog uit."/>
+        <text name="ads_inspection_hint_lubrication_stage2" text="Smeerpunten zien er droog uit en zijn onvoldoende ingevet."/>
+        <text name="ads_inspection_hint_lubrication_stage3" text="Smeerpunten zijn zeer droog, met weinig zichtbaar vet nog aanwezig."/>
+        <text name="ads_inspection_hint_lubrication_stage4" text="Smeerpunten zijn kritiek droog, met vrijwel geen zichtbaar vet meer aanwezig."/>
+        <text name="ads_inspection_hint_corroded_wiring_stage2" text="Lichte sporen van oxidatie zijn zichtbaar op enkele elektrische aansluitingen."/>
+        <text name="ads_inspection_hint_corroded_wiring_stage3" text="Duidelijke oxidatie en vervuiling zijn zichtbaar op de bedrading en connectoren."/>
+        <text name="ads_inspection_hint_corroded_wiring_stage4" text="Ernstige corrosie is zichtbaar op de bedrading en connectoren, en sommige isolatie lijkt beschadigd."/>
+        <text name="ads_inspection_hint_battery_sulfation_stage1" text="Een lichte witachtige aanslag is zichtbaar op de batterijpolen."/>
+        <text name="ads_inspection_hint_battery_sulfation_stage2" text="Een witachtige aanslag is zichtbaar op de batterijpolen."/>
+        <text name="ads_inspection_hint_battery_sulfation_stage3" text="Duidelijke oxidatie en aanslag zijn zichtbaar op de batterijpolen en behuizing."/>
+        <text name="ads_inspection_hint_battery_sulfation_stage4" text="De batterij en polen zijn bedekt met zware aanslag, en de behuizing ziet er vuil en versleten uit."/>
+        <text name="ads_inspection_hint_alternator_regulator_failure_stage3" text="Tekenen van oververhitting en verkleuring zijn zichtbaar rond de dynamo en enkele aansluitingen."/>
+        <text name="ads_inspection_hint_alternator_regulator_failure_stage4" text="Duidelijke tekenen van oververhitting en verkleurde connectoren zijn zichtbaar rond de dynamo en de bedrading ervan."/>
+        <text name="ads_inspection_hint_turbocharger_malfunction_stage3" text="Olieachtige sporen en verkleurde aansluitingen zijn zichtbaar rond de turbo."/>
+        <text name="ads_inspection_hint_turbocharger_malfunction_stage4" text="Zware olieachtige sporen, verkleurde aansluitingen en roetsporen zijn zichtbaar rond de turbo."/>
+        <text name="ads_inspection_hint_powershift_hydraulic_pump_malfunction_stage3" text="Olieachtige sporen en vervuiling zijn zichtbaar rond de hydraulische aansluitingen van de transmissie."/>
+        <text name="ads_inspection_hint_powershift_hydraulic_pump_malfunction_stage4" text="Zware olieachtige sporen en sterke vervuiling zijn zichtbaar rond de hydraulische aansluitingen van de transmissie."/>
+        <text name="ads_inspection_hint_cvt_hydraulic_control_valve_malfunction_stage3" text="Olieachtige sporen en verkleurde aansluitingen zijn zichtbaar rond het hydraulische CVT-regelblok."/>
+        <text name="ads_inspection_hint_cvt_hydraulic_control_valve_malfunction_stage4" text="Zware olieachtige sporen en sterke vervuiling zijn zichtbaar rond de aansluitingen van het hydraulische CVT-regelblok."/>
+        <text name="ads_inspection_hint_track_tensioner_malfunction_stage2" text="De rupsbandspanning lijkt licht ongelijkmatig."/>
+        <text name="ads_inspection_hint_track_tensioner_malfunction_stage3" text="De rupsband lijkt los te zitten, met merkbaar ongelijkmatige spanning."/>
+        <text name="ads_inspection_hint_track_tensioner_malfunction_stage4" text="De rupsband hangt zichtbaar door en de spanning lijkt ernstig aangetast."/>
+
+        <text name="ads_ingame_menu_title" text="Advanced Damage System"/>
+        <text name="ads_ingame_menu_section_active" text="ADS-voertuigen"/>
+        <text name="ads_ingame_menu_section_service" text="In Onderhoud"/>
+        <text name="ads_ingame_menu_header_vehicle" text="Voertuig"/>
+        <text name="ads_ingame_menu_header_type" text="Type"/>
+        <text name="ads_ingame_menu_header_age" text="Leeftijd"/>
+        <text name="ads_ingame_menu_header_working_hours" text="Uren"/>
+        <text name="ads_ingame_menu_header_condition" text="Conditie"/>
+        <text name="ads_ingame_menu_header_interval" text="Interval"/>
+        <text name="ads_ingame_menu_header_service_status" text="Geïnspecteerd/Onderhouden"/>
+        <text name="ads_ingame_menu_header_last_inspection" text="Inspect."/>
+        <text name="ads_ingame_menu_header_last_maintenance" text="Onderh."/>
+        <text name="ads_ingame_menu_header_cost" text="Onderhoudskosten"/>
+        <text name="ads_ingame_menu_header_leasing_price" text="Leasing"/>
+        <text name="ads_ingame_menu_header_price" text="Waarde"/>
+        <text name="ads_ingame_menu_header_procedure" text="Procedure"/>
+        <text name="ads_ingame_menu_header_time_left" text="Resterende Tijd"/>
+        <text name="ads_ingame_menu_header_finish_time" text="Eindtijd"/>
+        <text name="ads_ingame_menu_header_service_cost" text="Kosten"/>
+        <text name="ads_ingame_menu_section_other" text="Overige Voertuigen"/>
+        <text name="ads_ingame_menu_empty_other" text="Geen niet-ADS-voertuigen beschikbaar"/>
+        <text name="ads_ingame_menu_empty_active" text="Geen ADS-voertuigen beschikbaar"/>
+        <text name="ads_ingame_menu_empty_service" text="Er zijn momenteel geen voertuigen in onderhoud"/>
+        <text name="ads_sell_dialog_costs_title" text="Bijkomende kosten"/>
+        <text name="ads_sell_dialog_deposit_return" text="Teruggave borg"/>
+        <text name="ads_sell_dialog_overdue_maintenance_penalty" text="Achterstallig onderhoud"/>
+        <text name="ads_sell_dialog_repair_penalty" text="Reparatie"/>
+        <text name="ads_sell_dialog_washing_penalty" text="Wassen"/>
+        <text name="ads_sell_dialog_total" text="Totaal"/>
+        <text name="ads_mobile_workshop_low_maintainability" text="WAARSCHUWING: %s is niet beschikbaar voor %s in de mobiele werkplaats vanwege lage onderhoudbaarheid."/>
+        <text name="ads_breakdowns_overload_breakdown_stage2_message" text="Kritieke overbelasting! Verminder onmiddellijk de belasting op het voertuig."/>
+
+        <text name="ads_tutorialMode_label" text="Tutorialmodus"/>
+        <text name="ads_tutorialMode_tooltip" text="Toont tutorialtips tijdens het spelen. Uitgeschakeld in multiplayer."/>
+        <text name="ads_tutorialResetTips_label" text="Tips resetten"/>
+        <text name="ads_tutorialResetTips_text" text="Tips resetten"/>
+        <text name="ads_tutorialResetTips_tooltip" text="Reset de geschiedenis van tutorialtips en toon alle tips opnieuw. Alleen beschikbaar in singleplayer."/>
+        <text name="ads_tutorialResetConfirm_title" text="Tutorialtips resetten?"/>
+        <text name="ads_tutorialResetConfirm_message" text="Geschiedenis van tutorialtips resetten en alle tips opnieuw tonen?"/>
+        <text name="ads_tutorial_welcome_dialog_title" text="Welkom bij Advanced Damage System"/>
+        <text name="ads_tutorial_welcome_disable_button" text="Tips Uitschakelen"/>
+        <text name="ads_tutorial_welcome_enable_button" text="Tips Inschakelen"/>
+        <text name="ads_tutorial_welcome_message" text="Deze mod vernieuwt het schade- en onderhoudssysteem van voertuigen in het spel volledig. Er zijn veel veranderingen, dus tutorialtips zullen af en toe verschijnen. Ze helpen u de nieuwe mechanica sneller te begrijpen, veelgemaakte fouten te vermijden en uw machines storingsvrij te houden.&#10;&#10;Als u wilt, kunt u tutorialtips nu direct uitschakelen. U kunt ze later altijd weer inschakelen in de mod-instellingen, onder de sectie Advanced Damage System."/>
+        <text name="ads_tutorial_service_due_soon_title" text="Periodiek Onderhoud"/>
+        <text name="ads_tutorial_service_due_soon_message" text="%s zal binnenkort onderhoud nodig hebben.&#10;&#10;In ADS hebben voertuigen regelmatig onderhoud nodig. Als u dit uitstelt, neemt de kans op storingen aanzienlijk toe.&#10;&#10;Bezoek de dichtstbijzijnde werkplaats en kies &quot;Onderhoud&quot;. Het onderhoudsinterval kan worden aangepast in de mod-instellingen."/>
+        <text name="ads_tutorial_service_interval_expired_title" text="Onderhoudsinterval Verlopen"/>
+        <text name="ads_tutorial_service_interval_expired_message" text="%s heeft het onderhoudsinterval overschreden en heeft onderhoud nodig.&#10;&#10;Ga zo snel mogelijk naar een werkplaats en voer de procedure &quot;Onderhoud&quot; uit. Een voertuig met een achterstallig onderhoudsinterval blijven gebruiken verhoogt het risico op meerdere storingen aanzienlijk."/>
+        <text name="ads_tutorial_rad_or_intake_clogged_title" text="Vervuiling Radiateur en Luchtinlaat"/>
+        <text name="ads_tutorial_rad_or_intake_clogged_message" text="De radiateur en luchtinlaten van uw voertuig lijken zwaar verstopt te zijn.&#10;&#10;Een vuile radiateur kan warmte niet efficiënt afvoeren, en verstopte luchtinlaten kunnen de luchtstroom naar de motor beperken. Dit vermindert het vermogen en verhoogt het brandstofverbruik.&#10;&#10;U kunt ze reinigen bij een wasstation of met de Luchtblazer uit de winkel.&#10;&#10;U kunt de conditie van de radiateur en luchtinlaten controleren via inspectie: houd de R-toets ingedrukt terwijl u naar het voertuig kijkt."/>
+        <text name="ads_tutorial_needs_lubrication_title" text="Smering Vereist"/>
+        <text name="ads_tutorial_needs_lubrication_message" text="Uw %s heeft regelmatig smering nodig.&#10;&#10;In ADS daalt het smeringsniveau van werkende onderdelen elke dag geleidelijk, wat de slijtage verhoogt.&#10;&#10;Koop een Vetspuit in de winkel en smeer uw machine dagelijks of voor elke werkdienst.&#10;&#10;U kunt het smeringsniveau controleren via inspectie: houd de R-toets ingedrukt terwijl u naar het voertuig kijkt."/>
+        <text name="ads_tutorial_needs_repair_title" text="Voertuigstoring"/>
+        <text name="ads_tutorial_needs_repair_message" text="Het lijkt erop dat er iets mis is met uw %s. Een van de onderdelen is mogelijk defect.&#10;&#10;Bezoek zeker een werkplaats en voer een inspectie uit. Stel dit niet uit: de storing kan verergeren en de reparatiekosten zullen daarmee stijgen.&#10;&#10;Als de inspectie een storing bevestigt, verhelp deze dan met de reparatieprocedure bij de werkplaats."/>
+        <text name="ads_tutorial_needs_overhaul_title" text="Grote Revisie"/>
+        <text name="ads_tutorial_needs_overhaul_message" text="Het lijkt erop dat uw %s zijn leeftijd begint te tonen. Het is tijd om een vervanging of grote revisie te overwegen. Het is een lang en veeleisend proces, maar het is de beste manier om dat favoriete voertuig waar u zo aan gehecht bent geraakt een tweede leven te geven! P.S. U kunt de levensduur aanpassen in de instellingen — een hogere waarde vermindert de slijtagesnelheid van uw voertuigen."/>
+        <text name="ads_tutorial_age_degradation_title" text="Leeftijdsdegradatie"/>
+        <text name="ads_tutorial_age_degradation_message" text="Wist u dat voertuigen in ADS geleidelijk een deel van hun oorspronkelijke prestaties verliezen naarmate ze ouder worden?&#10;&#10;Na ongeveer een derde van de levensduur van een voertuig begint leeftijdsdegradatie kernkarakteristieken zoals vermogen, remmen en andere systemen licht te verminderen. Hoe ouder het voertuig wordt, hoe sterker dit effect wordt, en het is vooral merkbaar tegen het einde van de levensduur.&#10;&#10;U kunt leeftijdsdegradatie uitschakelen in de mod-instellingen."/>
+        <text name="ads_tutorial_needs_preventive_title" text="Storing Op Handen"/>
+        <text name="ads_tutorial_needs_preventive_message" text="Het lijkt erop dat een van de systemen van %s op het punt staat uit te vallen. Het goede nieuws is dat u dit kunt voorkomen! Een speciale dienst is nu beschikbaar bij de werkplaats: Preventief Onderhoud. Dit omvat een volledige technische inspectie plus proactieve reparatie van falende onderdelen!"/>
+        <text name="ads_tutorial_poor_consumables_title" text="Verbruiksmaterialen van Slechte Kwaliteit"/>
+        <text name="ads_tutorial_poor_consumables_message" text="Een klein geheimpje: uw %s is tijdens onderhoud het slachtoffer geworden van verbruiksmaterialen van slechte kwaliteit. Dat kan gebeuren, tenzij u zelf bewust voor goedkope namaakalternatieven heeft gekozen.&#10;&#10;Op dit moment is het onderhoudsinterval verkort en is de slijtage van onderdelen licht verhoogd. Een herhaald onderhoud lost het probleem op. U kunt dit herkennen via inspectie: een basisinspectie waarschuwt u voor het verkorte interval, terwijl een volledige diagnostische inspectie de verbruiksmaterialen van slechte kwaliteit zelf onthult."/>
+        <text name="ads_tutorial_poor_parts_title" text="Onderdelen van Slechte Kwaliteit"/>
+        <text name="ads_tutorial_poor_parts_message" text="Een klein geheimpje: uw %s is tijdens reparatie het slachtoffer geworden van onderdelen van slechte kwaliteit. Die storing zal hoogstwaarschijnlijk snel terugkeren.&#10;&#10;U kunt wachten tot het gebeurt, of direct een volledige diagnostische inspectie uitvoeren — deze zal het onderdeel van slechte kwaliteit betrouwbaar aan het licht brengen."/>
+        <text name="ads_tutorial_idle_and_downtime_title" text="Stilstand en Opslag"/>
+        <text name="ads_tutorial_idle_and_downtime_message" text="Trouwens, slijtage is veel lager wanneer uw machine draait maar niet actief aan het werk is, wat logisch is. Wanneer de motor uit staat, wordt slijtage minimaal, en als de machine overdekt gestald staat, verdwijnt deze helemaal."/>
+        <text name="ads_tutorial_hot_weather_title" text="Warm Weer"/>
+        <text name="ads_tutorial_hot_weather_message" text="Het is vandaag echt warm. Bij dit soort weer moet u extra goed letten op de netheid van de radiateur en overbelasting van de motor vermijden — anders is oververhitting slechts een kwestie van tijd.&#10;&#10;Onthoud: u kunt de conditie van de radiateur altijd controleren met een visuele inspectie door de R-toets ingedrukt te houden terwijl u naar de machine kijkt, en u kunt hem ook reinigen met de Luchtblazer."/>
+        <text name="ads_tutorial_wet_weather_title" text="Wat een Weer!"/>
+        <text name="ads_tutorial_wet_weather_message" text="Wat een weer vandaag. Vocht is slecht voor bedrading en elektrische apparatuur, dus de slijtage aan het elektrische systeem is iets hoger onder deze omstandigheden.&#10;&#10;Bovendien wordt oogsten bij dit soort weer sterk afgeraden — u doet uw maaidorser er alleen maar schade mee."/>
+        <text name="ads_tutorial_low_fuel_title" text="Weinig Brandstof"/>
+        <text name="ads_tutorial_low_fuel_message" text="Het lijkt erop dat u bijna zonder brandstof komt te zitten. Op het eerste gezicht lijkt dit misschien geen groot probleem, maar hoe minder brandstof er in de tank overblijft, hoe harder de brandstofpomp moet werken. De belasting neemt toe, en dat komt de levensduur zeker niet ten goede."/>
+        <text name="ads_tutorial_idle_deposit_title" text="Langdurig Stationair Draaien"/>
+        <text name="ads_tutorial_idle_deposit_message" text="Het lijkt erop dat de machine te lang stationair heeft gedraaid. Lange periodes stationair draaien zijn niet alleen verspilde brandstof: na verloop van tijd bevorderen ze ook afzettingen in het brandstofsysteem en schaden ze de algehele motorconditie.&#10;&#10;Als de machine op dit moment niet nodig is, kunt u de motor beter uitzetten."/>
+        <text name="ads_tutorial_engine_overheat_title" text="Motor Oververhit"/>
+        <text name="ads_tutorial_engine_overheat_message" text="De motor begint oververhit te raken. Dit kan een of meerdere oorzaken hebben: de motor staat onder zware belasting, de radiateur is verstopt, het weer is warm, of er is een storing in het koelsysteem van het voertuig.&#10;&#10;Blijf alert: oververhitting is een van de meest destructieve factoren voor elke machine. Het schaadt niet alleen de motor: het koelsysteem wordt tot het uiterste belast, en de hitte in de motorruimte versnelt de achteruitgang van bedrading en elektrische componenten."/>
+        <text name="ads_tutorial_cvt_overheat_title" text="CVT Oververhit"/>
+        <text name="ads_tutorial_cvt_overheat_message" text="De CVT begint oververhit te raken. Dit kan een of meerdere oorzaken hebben: de transmissie staat onder overmatige belasting, de radiateur is verstopt, of het weer is erg warm. U trekt bijvoorbeeld mogelijk een te zware ploeg of sleept een overbeladen aanhanger.&#10;&#10;Blijf alert: oververhitting is een van de meest destructieve dingen die een CVT-transmissie kunnen overkomen."/>
+        <text name="ads_tutorial_heavy_trailer_title" text="Zware Aanhanger"/>
+        <text name="ads_tutorial_heavy_trailer_message" text="Het lijkt erop dat u probeert een aanhanger te trekken die te zwaar is voor uw trekker. U kunt hiermee doorgaan, maar de transmissie komt onder enorme spanning te staan, en de remmen zullen de extra belasting ook niet waarderen.&#10;&#10;Volg een simpele regel: 10 pk of meer per 1 ton gesleept gewicht, en de machine gaat merkbaar langer mee."/>
+        <text name="ads_tutorial_chassis_vibration_title" text="Vering Onder Druk"/>
+        <text name="ads_tutorial_chassis_vibration_message" text="Wow, rustig aan! Snel rijden over ruw terrein slijt de vering van uw %s snel. Bovendien schaden die trillingen ook andere systemen — vooral hydrauliek en elektronica. Rijd rustig en neem het kalm aan."/>
+        <text name="ads_tutorial_steering_title" text="Sturen Terwijl Stilstaand"/>
+        <text name="ads_tutorial_steering_message" text="Het is het beste om niet te sturen terwijl u stilstaat. Dit legt een zware belasting op de stuurinrichting, de stuurbekrachtiging en de onderdelen van de vooras, wat de slijtage van het onderstel verhoogt.&#10;&#10;Begin gewoon met minstens een beetje te rijden, en de wielen draaien veel makkelijker."/>
+        <text name="ads_tutorial_cranking_title" text="Vaak Starten"/>
+        <text name="ads_tutorial_cranking_message" text="Het lijkt erop dat u de motor te vaak start. Elke motorstart stuurt een zeer hoge stroom door het elektrische systeem, wat de slijtage van de bedrading, starter en andere elektrische componenten versnelt.&#10;&#10;Probeer de starter niet te vaak te gebruiken en zet de motor niet uit alsof de machine een start-stopsysteem heeft."/>
+        <text name="ads_tutorial_hard_start_title" text="Moeilijk Starten"/>
+        <text name="ads_tutorial_hard_start_message" text="De motor starten op de %s is moeilijk. Dit kan worden veroorzaakt door een lege batterij, vriestemperaturen, mechanische storingen of slijtage van de starter. Om de motor te starten, houdt u de contactknop ingedrukt. Let op: het elektrische systeem staat tijdens het starten onder zware belasting door hoge inschakelstromen!"/>
+        <text name="ads_tutorial_critical_failure_title" text="Kritieke Storing"/>
+        <text name="ads_tutorial_critical_failure_message" text="Nou, dat is pech. Uw %s is volledig buiten werking gesteld en kan niet meer op eigen kracht bewegen. U kunt een mobiele werkplaats gebruiken en een snelle reparatie uitvoeren zodat het voertuig op eigen kracht naar de werkplaats kan rijden.&#10;&#10;Anders zult u een andere manier moeten bedenken om het terug te halen."/>
+        <text name="ads_tutorial_heavy_lift_title" text="Werktuig Te Zwaar"/>
+        <text name="ads_tutorial_heavy_lift_message" text="Het lijkt erop dat dit werktuig te zwaar is voor uw %s. De hydrauliek werkt op zijn limiet, wat de levensduur negatief zal beïnvloeden.&#10;&#10;Volg een simpele regel: het gewicht van het werktuig mag niet meer dan 60%% van het eigen gewicht van het voertuig bedragen."/>
+        <text name="ads_tutorial_cold_engine_title" text="Warm Uw Machine Op"/>
+        <text name="ads_tutorial_cold_engine_message" text="Warm uw machine altijd op voordat u ermee aan het werk gaat. Naast de motor zijn er nog veel andere onderdelen die tijd nodig hebben om op te warmen: hydraulische olie, de CVT-transmissie, en zelfs de brandstoftemperatuur — vooral bij vriesweer. Een koude machine gebruiken kan problemen veroorzaken in meerdere systemen.&#10;&#10;Als de motortemperatuur boven de 50 graden (122°F) is, is alles goed opgewarmd en kan de machine veilig worden gebruikt."/>
+        <text name="ads_tutorial_pto_sharp_angle_title" text="Aftakashoek Te Scherp"/>
+        <text name="ads_tutorial_pto_sharp_angle_message" text="Let op: de aftakashoek tussen uw machine en het werktuig is te groot. De aandrijfas begint hard te pulseren, de trillingen nemen toe en de slijtage loopt snel op.&#10;&#10;Houd de hoek onder 30 graden en probeer de aftakas uit te schakelen bij scherpe bochten en kopakkermanoeuvres."/>
+        <text name="ads_tutorial_overload_indicator_title" text="Overbelastingswaarschuwing"/>
+        <text name="ads_tutorial_overload_indicator_message" text="%s staat onder zware belasting. Het waarschuwingslampje dat zojuist op het dashboard is gaan branden, laat u dit weten.&#10;&#10;De machine heeft mogelijk niet genoeg vermogen voor de huidige taak. Probeer de belasting te verminderen: beperk uw snelheid met cruisecontrol, of neem gas terug in plaats van op vol vermogen te blijven rijden."/>
+        <text name="ads_tutorial_engine_overload_title" text="Motoroverbelasting"/>
+        <text name="ads_tutorial_engine_overload_message" text="De motor staat onder enorme druk. Het kan zijn dat de taak die u probeert uit te voeren simpelweg te veel is voor deze machine, en u zou een krachtiger exemplaar moeten overwegen. Of het kan genoeg zijn om af te remmen en de belasting op de motor te verminderen.&#10;&#10;Houd er in elk geval rekening mee dat de slijtage merkbaar toeneemt onder dit soort belasting."/>
+        <text name="ads_tutorial_lugging_title" text="Motor Afknijpen"/>
+        <text name="ads_tutorial_lugging_message" text="De motor, en vooral de transmissie, houden niet van afknijpen: lage toeren bij zware motorbelasting. Mogelijk heeft u iets te zwaars aangekoppeld voor de machine, of kiest u simpelweg verkeerde versnellingen als de bak handgeschakeld is."/>
+        <text name="ads_tutorial_wheel_slip_title" text="Wielslip"/>
+        <text name="ads_tutorial_wheel_slip_message" text="Het lijkt erop dat uw wielen flink slippen. Mogelijk zit u zelfs vast en heeft u geen zin in advies, maar onthoud dit: wielslip is een van de meest destructieve factoren voor de transmissie en brengt uw volgende onderhoudsbeurt een stuk dichterbij."/>
+        <text name="ads_tutorial_battery_low_title" text="Zwakke Batterij"/>
+        <text name="ads_tutorial_battery_low_message" text="Oeps, het lijkt erop dat de batterij bijna leeg is. Dit kan gebeuren na een lange periode van stilstand, door strenge kou, of door storingen in het elektrische systeem.&#10;&#10;Bij een lage lading zal starten moeilijk of zelfs onmogelijk zijn. Als u de motor niet aan de praat krijgt, kunt u de machine met Startkabels vanaf een ander voertuig starten."/>
+        <text name="ads_tutorial_throttle_control_title" text="Gasbediening"/>
+        <text name="ads_tutorial_throttle_control_message" text="Als u met een toetsenbord speelt, kunt u het gas begrenzen zodat u het pedaal niet constant hoeft in te drukken en de motorbelasting bij hard optrekken kunt verminderen. Houd hiervoor W + T ingedrukt en gebruik het muiswiel om de gewenste limiet in te stellen. Vanaf dat moment houdt het indrukken van W rekening met de gekozen limiet. Als u het toch even helemaal los wilt laten en het pedaal wilt indrukken, houdt u gewoon W + Shift ingedrukt."/>
+    </texts>
+</l10n>
