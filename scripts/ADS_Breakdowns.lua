@@ -3049,16 +3049,31 @@ ADS_Breakdowns.EffectApplicators.ENGINE_FAILURE = {
 -- ==========================================================
 -- LIGHTS_FAILURE
 ADS_Breakdowns.EffectApplicators.LIGHTS_FAILURE = {
+    getEffectName = function()
+        return "LIGHTS_FAILURE"
+    end,
     apply = function(vehicle, effectData, handler)
         log_dbg("Applying LIGHTS_FAILURE effect")
+        local effectName = handler.getEffectName()
         local currentLightMask = vehicle:getLightsTypesMask()
         if currentLightMask ~= 0 then
             vehicle:setLightsTypesMask(0, true, true)
         end
+        if vehicle.spec_lights ~= nil and vehicle.spec_lights.beaconLightsActive and vehicle.deactivateBeaconLights ~= nil then
+            vehicle:deactivateBeaconLights()
+        end
+
+        local activeFunc = function(v, dt)
+            if v.spec_lights ~= nil and v.spec_lights.beaconLightsActive and v.deactivateBeaconLights ~= nil then
+                v:deactivateBeaconLights()
+            end
+        end
+        addFuncToActive(vehicle, effectName, activeFunc)
     end,
 
     remove = function(vehicle, handler)
         log_dbg("Removing LIGHTS_FAILURE effect")
+        removeFuncFromActive(vehicle, handler.getEffectName())
     end
 }
 

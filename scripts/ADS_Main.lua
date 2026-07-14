@@ -90,14 +90,17 @@ function ADS_Main.registerSpecializationToVehicles()
 
 			local ismotorized = false;
 			local hasNotADS = true;
+			local isPushHandTool = false;
 			for name, spec in pairs(vehicle.specializationsByName) do
 				if name == "motorized" then
 					ismotorized = true;
 				elseif name == "AdvancedDamageSystem" then
 					hasNotADS = false;
+				elseif name == "pushHandTool" then
+					isPushHandTool = true;
 				end
 			end
-			if hasNotADS and ismotorized then
+			if hasNotADS and ismotorized and not isPushHandTool then
 				local specObject = g_specializationManager:getSpecializationObjectByName(specName);
 				if specObject then
                     vehicle.specializationsByName[specName] = specObject;
